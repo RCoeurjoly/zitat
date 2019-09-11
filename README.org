@@ -1,0 +1,4 @@
+* [[https://sagallesab.wordpress.com/zitat/][zitat]]
+Kindle clipping to org-mode converter
+
+Fork from https://sagallesab.wordpress.com/zitat/
