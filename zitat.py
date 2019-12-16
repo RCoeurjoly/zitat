@@ -343,7 +343,7 @@ def export_to_org(clippings, out_filename, in_filename):
         out_file.write(u'\n\n')
         out_file.write(u'Generated from clippings in file ' + in_filename + '\n')
         out_file.write(u'on ' + time.strftime('%Y-%m-%d %H:%M:%S %Z') + '\n')
-        out_file.write(u'by the zitat script (http://sagallesab.wordpress.com/zitat).')
+        out_file.write(u'by the zitat script https://github.com/RCoeurjoly/zitat.')
         out_file.write(u'\n\n\n')
 
         # Sort dictionary by Author | Title | Type | Location
