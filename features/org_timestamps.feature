@@ -1,7 +1,7 @@
 Feature: kindle generated timestamps are converted to org mode timestamps for fun and profit
 
   Scenario Outline: kindle to org
-    Given the kindle timestamp "<kindle_timestamp>"
+    Given the English kindle timestamp "<kindle_timestamp>"
     When we convert it to org format
     Then we should have the org timestamp "<org_timestamp>"
 

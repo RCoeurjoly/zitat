@@ -5,7 +5,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(dir_path + "../../zitat.py")
 from zitat import *
 
-@given('the kindle timestamp "{kindle_timestamp}"')
+@given('the English kindle timestamp "{kindle_timestamp}"')
 def step_impl(context, kindle_timestamp):
     context.kindle_timestamp = kindle_timestamp
 
