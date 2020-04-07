@@ -1,0 +1,6 @@
+env/
+*.pyc
+GPATH
+GRTAGS
+GSYMS
+GTAGS

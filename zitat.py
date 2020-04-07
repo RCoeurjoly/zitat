@@ -33,7 +33,82 @@ URL: http://sagallesab.wordpress.com/zitat
 import codecs
 import sys
 import time
+import re
 
+def dummy():
+    return 10
+
+def get_EN_month(day_section):
+    months_equivalence = {"January":   "01",
+                          "February":  "02",
+                          "March":     "03",
+                          "April":     "04",
+                          "May":       "05",
+                          "June":      "06",
+                          "July":      "07",
+                          "August":    "08",
+                          "September": "09",
+                          "October":   "10",
+                          "November":  "11",
+                          "December":  "12"}
+    for month in months_equivalence:
+        if re.search(month, day_section):
+            return months_equivalence[month]
+
+def get_EN_day_section(kindle_timestamp):
+    return re.search(r'.*?,(.*?),', kindle_timestamp).group(1)
+
+def get_EN_year_time_section(kindle_timestamp):
+    return re.search(r'.*?,.*?,(.*?)$', kindle_timestamp).group(1)
+
+def get_EN_day(day_section):
+    day = re.search(r'[0-9]*$', day_section).group(0)
+    if int(day) < 10:
+        return "0" + day
+    return day
+
+def get_EN_year(year_time_section):
+    return re.search(r'\s*([0-9]*)', year_time_section).group(1)
+
+def get_EN_period(year_time_section):
+    return re.search(r'([A-Z]{2})$', year_time_section).group(1)
+
+def get_EN_time(year_time_section):
+    return re.search(r'([0-9]*:[0-9]*:[0-9]*)\s..$', year_time_section).group(1)
+
+def calculate_ISO_8601_date(year, month, day):
+    return str(year) + "-" + str(month) + "-" + str(day)
+
+def calculate_ISO_8601_time(unadjusted_time, period):
+    partitioned_time=re.search(r'([0-9]*):([0-9]*:[0-9]*)$', unadjusted_time)
+    unadjusted_hour=int(partitioned_time.group(1))
+    minutes_and_seconds=partitioned_time.group(2)
+    assert period == "PM" or period == "AM"
+    if period == "PM" and unadjusted_hour < 12:
+        adjusted_hour=unadjusted_hour + 12
+    else:
+        adjusted_hour=unadjusted_hour
+    return str(adjusted_hour) + ":" + minutes_and_seconds
+
+def EN_kindle_timestamp_to_ISO_8601(EN_kindle_timestamp):
+    '''
+    Returns an org formatted timestamp
+    :param kindletimestamp: the kindle timestamp in whatever language
+    '''
+    year_time_section = get_EN_year_time_section(EN_kindle_timestamp)
+    day_section = get_EN_day_section(EN_kindle_timestamp)
+
+    year = get_EN_year(year_time_section)
+    month = get_EN_month(day_section)
+    day = get_EN_day(day_section)
+
+    unadjusted_time = get_EN_time(year_time_section)
+    period = get_EN_period(year_time_section)
+
+    date = calculate_ISO_8601_date(year, month, day)
+    time = calculate_ISO_8601_time(unadjusted_time, period)
+
+    return "[" + date + " " + time + "]"
 
 def open_clippings_file(filename):
     '''
@@ -166,7 +241,7 @@ def process_clipping(authors, clipping):
 
     # New clipping becomes a tuple.
     new_entry = (location, date, content)
-
+    print date
     # Append new tuple to the list.
     cltype_list.append(new_entry)
 
@@ -328,6 +403,25 @@ def sort_clipping_list(clippings):
 
     return sorted(clippings, key=compute_srt_location)
 
+def ZH_kindle_timestamp_to_ISO_8601(ZH_kindle_timestamp):
+    '''
+    Returns sorted list of clippings (same title, same type) by location in
+    ascending order. Ignores leading 'Page ' or 'Loc. '. Converts from roman
+    numerals (for pages) to numbers (but romans must come before numbers). Also,
+    if it is a range, consider only the digits before the dash.
+    :param kindletimestamp: the kindle timestamp in whatever language
+    '''
+    pass
+
+def kindle_timestamp_to_ISO_8601(kindle_timestamp):
+    '''
+    Returns sorted list of clippings (same title, same type) by location in
+    ascending order. Ignores leading 'Page ' or 'Loc. '. Converts from roman
+    numerals (for pages) to numbers (but romans must come before numbers). Also,
+    if it is a range, consider only the digits before the dash.
+    :param kindletimestamp: the kindle timestamp in whatever language
+    '''
+    pass
 
 def export_to_org(clippings, out_filename, in_filename):
     '''
