@@ -36,6 +36,14 @@ import sys
 import time
 import re
 
+def kindle_timestamp_to_ISO_8601(timestamp):
+    language_function_equivalence = {"Added on":   EN_kindle_timestamp_to_ISO_8601,
+                                     "添加于":      ZH_kindle_timestamp_to_ISO_8601}
+
+    for language_signature in language_function_equivalence:
+        if re.search(language_signature, timestamp):
+            return language_function_equivalence[language_signature](timestamp)
+
 def get_EN_month(day_section):
     months_equivalence = {"January":   "01",
                           "February":  "02",
@@ -178,7 +186,6 @@ def open_clippings_file(filename):
         print('Exiting.')
         sys.exit(1)
 
-
 def get_data(clippings):
     '''
     Return a tuple with author, title, cltype, location, date, and content of a clipping.
@@ -230,15 +237,14 @@ def get_data(clippings):
         location = ' '.join(words[1:])
 
     # date is last field.
-    date = fields[-1]
+    date = kindle_timestamp_to_ISO_8601(fields[-1])
 
 # ===============================================================================
 # Line 2 is always blank. Line 3 is the contents.
 # ===============================================================================
     content = lines[3]
-    titulo = title
-    return author, titulo, cltype, location, date, content
 
+    return author, title, cltype, location, date, content
 
 def process_clipping(authors, clipping):
     '''
@@ -285,7 +291,6 @@ def process_clipping(authors, clipping):
 
     # Append new tuple to the list.
     cltype_list.append(new_entry)
-
 
 def import_clippings_file(filename):
     '''
@@ -444,17 +449,7 @@ def sort_clipping_list(clippings):
 
     return sorted(clippings, key=compute_srt_location)
 
-def kindle_timestamp_to_ISO_8601(kindle_timestamp):
-    '''
-    Returns sorted list of clippings (same title, same type) by location in
-    ascending order. Ignores leading 'Page ' or 'Loc. '. Converts from roman
-    numerals (for pages) to numbers (but romans must come before numbers). Also,
-    if it is a range, consider only the digits before the dash.
-    :param kindletimestamp: the kindle timestamp in whatever language
-    '''
-    pass
-
-def export_to_org(clippings, out_filename, in_filename):
+def export_to_org_file(clippings, out_filename, in_filename):
     '''
     Export contents of dictionary to org text file.
     :param clippings: main dictionary.
@@ -467,7 +462,7 @@ def export_to_org(clippings, out_filename, in_filename):
         # Write a couple of empty lines and info about file.
         out_file.write(u'\n\n')
         out_file.write(u'Generated from clippings in file ' + in_filename + '\n')
-        out_file.write(u'on ' + time.strftime('%Y-%m-%d %H:%M:%S %Z') + '\n')
+        out_file.write(u'on ' + time.strftime('[%Y-%m-%d %H:%M:%S %Z]') + '\n')
         out_file.write(u'by the zitat script https://github.com/RCoeurjoly/zitat.')
         out_file.write(u'\n\n\n')
 
@@ -538,7 +533,7 @@ def zitat(argv):
 
     # Export contents of dictionary to output file.
     print('Writing', output_filename + '.')
-    export_to_org(clippings, output_filename, input_filename)
+    export_to_org_file(clippings, output_filename, input_filename)
     print('Done.\n')
 
 

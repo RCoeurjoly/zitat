@@ -1643,3 +1643,13 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年7月25日星期四 上午7:51:41   | [2019-07-25 7:51:41]  |
       | 添加于 2019年7月25日星期四 下午10:29:37  | [2019-07-25 22:29:37] |
       | 添加于 2019年8月23日星期五 下午5:56:03   | [2019-08-23 17:56:03] |
+
+Scenario Outline: Multilingual kindle timestamp to org
+    Given the kindle timestamp "<kindle_timestamp>"
+    When we convert the timestamp to org format
+    Then we should have the org timestamp "<org_timestamp>"
+
+    Examples:
+      | kindle_timestamp                                  | org_timestamp         |
+      | 添加于 2019年8月23日星期五 下午5:56:03                | [2019-08-23 17:56:03] |
+      | Added on Monday, December 23, 2019 7:44:05 PM     | [2019-12-23 19:44:05] |

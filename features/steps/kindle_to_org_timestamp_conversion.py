@@ -19,6 +19,10 @@ def step_impl(context):
 def step_impl(context):
     context.expected_org_timestamp = ZH_kindle_timestamp_to_ISO_8601(context.kindle_timestamp)
 
+@when('we convert the timestamp to org format')
+def step_impl(context):
+    context.expected_org_timestamp = kindle_timestamp_to_ISO_8601(context.kindle_timestamp)
+
 @then('we should have the org timestamp "{org_timestamp}"')
 def step_impl(context, org_timestamp):
     assert context.expected_org_timestamp == org_timestamp
