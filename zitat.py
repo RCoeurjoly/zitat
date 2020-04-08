@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #!/usr/bin/env python
 
 #   zitat.py: reads and converts Kindle clippings files.
@@ -35,9 +36,6 @@ import sys
 import time
 import re
 
-def dummy():
-    return 10
-
 def get_EN_month(day_section):
     months_equivalence = {"January":   "01",
                           "February":  "02",
@@ -62,25 +60,25 @@ def get_EN_year_time_section(kindle_timestamp):
     return re.search(r'.*?,.*?,(.*?)$', kindle_timestamp).group(1)
 
 def get_EN_day(day_section):
-    day = re.search(r'[0-9]*$', day_section).group(0)
+    day = re.search(r'\d{1,2}$', day_section).group(0)
     if int(day) < 10:
         return "0" + day
     return day
 
 def get_EN_year(year_time_section):
-    return re.search(r'\s*([0-9]*)', year_time_section).group(1)
+    return re.search(r'\s*(\d{4})', year_time_section).group(1)
 
 def get_EN_period(year_time_section):
     return re.search(r'([A-Z]{2})$', year_time_section).group(1)
 
 def get_EN_time(year_time_section):
-    return re.search(r'([0-9]*:[0-9]*:[0-9]*)\s..$', year_time_section).group(1)
+    return re.search(r'(\d{1,2}:\d{2}:\d{2})\s..$', year_time_section).group(1)
 
 def calculate_ISO_8601_date(year, month, day):
     return str(year) + "-" + str(month) + "-" + str(day)
 
 def calculate_ISO_8601_time(unadjusted_time, period):
-    partitioned_time=re.search(r'([0-9]*):([0-9]*:[0-9]*)$', unadjusted_time)
+    partitioned_time=re.search(r'(\d{1,2}):(\d{2}:\d{2})$', unadjusted_time)
     unadjusted_hour=int(partitioned_time.group(1))
     minutes_and_seconds=partitioned_time.group(2)
     assert period == "PM" or period == "AM"
@@ -110,6 +108,49 @@ def EN_kindle_timestamp_to_ISO_8601(EN_kindle_timestamp):
 
     return "[" + date + " " + time + "]"
 
+def get_ZH_month(ZH_kindle_timestamp):
+    month = re.search(r'(\d{1,2})月', ZH_kindle_timestamp).group(1)
+    if int(month) < 10:
+        return "0" + month
+    return month
+
+def get_ZH_day(ZH_kindle_timestamp):
+    day = re.search(r'(\d{1,2})日', ZH_kindle_timestamp).group(1)
+    if int(day) < 10:
+        return "0" + day
+    return day
+
+def get_ZH_year(ZH_kindle_timestamp):
+    return re.search(r'(\d{4})年', ZH_kindle_timestamp).group(1)
+
+def get_ZH_period(ZH_kindle_timestamp):
+    if re.search(r'(.)午', ZH_kindle_timestamp).group(1) == "下":
+        return "PM"
+    return "AM"
+
+def get_ZH_time(ZH_kindle_timestamp):
+    return re.search(r'午(\d{1,2}:\d{2}:\d{2})$', ZH_kindle_timestamp).group(1)
+
+def ZH_kindle_timestamp_to_ISO_8601(ZH_kindle_timestamp):
+    '''
+    Returns sorted list of clippings (same title, same type) by location in
+    ascending order. Ignores leading 'Page ' or 'Loc. '. Converts from roman
+    numerals (for pages) to numbers (but romans must come before numbers). Also,
+    if it is a range, consider only the digits before the dash.
+    :param kindletimestamp: the kindle timestamp in whatever language
+    '''
+    year = get_ZH_year(ZH_kindle_timestamp)
+    month = get_ZH_month(ZH_kindle_timestamp)
+    day = get_ZH_day(ZH_kindle_timestamp)
+
+    unadjusted_time = get_ZH_time(ZH_kindle_timestamp)
+    period = get_ZH_period(ZH_kindle_timestamp)
+
+    date = calculate_ISO_8601_date(year, month, day)
+    time = calculate_ISO_8601_time(unadjusted_time, period)
+
+    return "[" + date + " " + time + "]"
+
 def open_clippings_file(filename):
     '''
     Try to open file and read it into one unicode string. Return string.
@@ -133,8 +174,8 @@ def open_clippings_file(filename):
         in_file.close()
         return file_as_string
     except IOError:
-        print 'Error reading ' + filename + '.'
-        print 'Exiting.'
+        print('Error reading ' + filename + '.')
+        print('Exiting.')
         sys.exit(1)
 
 
@@ -146,9 +187,9 @@ def get_data(clippings):
 
     lines = clippings.split("\r\n")
 
-#===============================================================================
+# ===============================================================================
 #   author is between parentheses at the end of line 0.
-#===============================================================================
+# ===============================================================================
 # If no closing parenthesis, author is 'Unknown'.
     if lines[0][-1] != ')':
         author = u'Unknown'
@@ -160,9 +201,9 @@ def get_data(clippings):
         else:
             author = lines[0][position + 1:-1]
 
-#===============================================================================
+# ===============================================================================
 #   title is from beginning of line 0 to just before rightmost '('.
-#===============================================================================
+# ===============================================================================
 # If no closing parenthesis, the whole line is the title.
     if lines[0][-1] != ')':
         title = lines[0].strip()
@@ -172,10 +213,10 @@ def get_data(clippings):
             position = len(lines[1])
         title = lines[0][:position].strip()
 
-#===============================================================================
+# ===============================================================================
 #   Line 1 is a sequence of fields separated by '|'.
 #   Field 0 starts with '- ', which we strip (dashes and spaces).
-#===============================================================================
+# ===============================================================================
     fields = [s.strip(' -') for s in lines[1].split('|')]
 
     # cltype is first word of first field.
@@ -191,9 +232,9 @@ def get_data(clippings):
     # date is last field.
     date = fields[-1]
 
-#===============================================================================
+# ===============================================================================
 # Line 2 is always blank. Line 3 is the contents.
-#===============================================================================
+# ===============================================================================
     content = lines[3]
     titulo = title
     return author, titulo, cltype, location, date, content
@@ -241,7 +282,7 @@ def process_clipping(authors, clipping):
 
     # New clipping becomes a tuple.
     new_entry = (location, date, content)
-    print date
+
     # Append new tuple to the list.
     cltype_list.append(new_entry)
 
@@ -403,16 +444,6 @@ def sort_clipping_list(clippings):
 
     return sorted(clippings, key=compute_srt_location)
 
-def ZH_kindle_timestamp_to_ISO_8601(ZH_kindle_timestamp):
-    '''
-    Returns sorted list of clippings (same title, same type) by location in
-    ascending order. Ignores leading 'Page ' or 'Loc. '. Converts from roman
-    numerals (for pages) to numbers (but romans must come before numbers). Also,
-    if it is a range, consider only the digits before the dash.
-    :param kindletimestamp: the kindle timestamp in whatever language
-    '''
-    pass
-
 def kindle_timestamp_to_ISO_8601(kindle_timestamp):
     '''
     Returns sorted list of clippings (same title, same type) by location in
@@ -460,8 +491,8 @@ def export_to_org(clippings, out_filename, in_filename):
                     export_content_org(clipping, out_file)
         out_file.close()
     except IOError:
-        print 'Error writing ' + out_filename + '.'
-        print 'Exiting.'
+        print('Error writing ' + out_filename + '.')
+        print('Exiting.')
         sys.exit(1)
 
 
@@ -480,7 +511,7 @@ def zitat(argv):
         input_filename = raw_input('Enter input filename below:\n>>> ').strip()
 
     if input_filename == '':
-        print 'No input filename given. Exiting.'
+        print('No input filename given. Exiting.')
         sys.exit(1)
 
     # If second arg given, it is output file name.
@@ -502,13 +533,13 @@ def zitat(argv):
             output_filename = output_filename_sugg
 
     # Open file and import it to dictionary.
-    print 'Reading', input_filename + '.'
+    print('Reading', input_filename + '.')
     clippings = import_clippings_file(input_filename)
 
     # Export contents of dictionary to output file.
-    print 'Writing', output_filename + '.'
+    print('Writing', output_filename + '.')
     export_to_org(clippings, output_filename, input_filename)
-    print 'Done.\n'
+    print('Done.\n')
 
 
 if __name__ == '__main__':

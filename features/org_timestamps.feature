@@ -1,12 +1,13 @@
+# -*- coding: utf-8 -*-
 Feature: kindle generated timestamps are converted to org mode timestamps for fun and profit
 
-  Scenario Outline: kindle to org
-    Given the English kindle timestamp "<kindle_timestamp>"
-    When we convert it to org format
+  Scenario Outline: English kindle timestamp to org
+    Given the kindle timestamp "<en_kindle_timestamp>"
+    When we convert the English timestamp to org format
     Then we should have the org timestamp "<org_timestamp>"
 
     Examples:
-      | kindle_timestamp                                  | org_timestamp         |
+      | en_kindle_timestamp                               | org_timestamp         |
       | Added on Saturday, March 14, 2020 11:00:49 PM     | [2020-03-14 23:00:49] |
       | Added on Friday, September 13, 2019 5:20:40 PM    | [2019-09-13 17:20:40] |
       | Added on Friday, September 13, 2019 8:47:12 PM    | [2019-09-13 20:47:12] |
@@ -1385,3 +1386,12 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Monday, December 23, 2019 6:44:59 PM     | [2019-12-23 18:44:59] |
       | Added on Monday, December 23, 2019 7:37:32 PM     | [2019-12-23 19:37:32] |
       | Added on Monday, December 23, 2019 7:44:05 PM     | [2019-12-23 19:44:05] |
+
+  Scenario Outline: Chinese kindle timestamp to org
+    Given the kindle timestamp "<zh_kindle_timestamp>"
+    When we convert the Chinese timestamp to org format
+    Then we should have the org timestamp "<org_timestamp>"
+
+    Examples:
+      | zh_kindle_timestamp                               | org_timestamp         |
+      | 添加于 2019年8月23日星期五 下午5:56:03                | [2019-08-23 17:56:03] |
