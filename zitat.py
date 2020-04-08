@@ -170,7 +170,7 @@ def open_clippings_file(filename):
 
     try:
         in_file = open(filename)
-        file_as_string = unicode(in_file.read(), 'utf-8-sig')
+        file_as_string =  codecs.decode(in_file.read(), encoding='utf-8-sig', errors='strict')
         in_file.close()
         return file_as_string
     except IOError:
@@ -316,7 +316,7 @@ def sorted_dict(adict):
     :param adict:
     '''
     keys = adict.keys()
-    keys[:] = sorted(keys, key=unicode.lower)
+    keys[:] = sorted(keys, key=str.lower)
     return [(key, adict[key]) for key in keys]
 
 
@@ -508,7 +508,7 @@ def zitat(argv):
         input_filename = argv[1]
     else:
         # Get from keyboard.
-        input_filename = raw_input('Enter input filename below:\n>>> ').strip()
+        input_filename = input('Enter input filename below:\n>>> ').strip()
 
     if input_filename == '':
         print('No input filename given. Exiting.')
@@ -527,7 +527,7 @@ def zitat(argv):
             output_filename_sugg = input_filename + output_extension
 
         # Get from keyboard, offering suggestion (input file with .org extension).
-        output_filename = raw_input(
+        output_filename = input(
             'Enter output filename below [{}]:\n>>> '.format(output_filename_sugg)).strip()
         if output_filename == '':
             output_filename = output_filename_sugg
