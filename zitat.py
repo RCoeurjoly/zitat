@@ -170,7 +170,7 @@ def open_clippings_file(filename):
 
     try:
         in_file = open(filename)
-        file_as_string =  codecs.decode(in_file.read(), encoding='utf-8-sig', errors='strict')
+        file_as_string =  in_file.read()
         in_file.close()
         return file_as_string
     except IOError:
@@ -185,7 +185,7 @@ def get_data(clippings):
     :param c: clipping to process.
     '''
 
-    lines = clippings.split("\r\n")
+    lines = clippings.split("\n")
 
 # ===============================================================================
 #   author is between parentheses at the end of line 0.
@@ -297,7 +297,7 @@ def import_clippings_file(filename):
     clippings_string = open_clippings_file(filename)
 
     # Split into list of clippings. Discard last, empty clipping.
-    clipping_separator = '\r\n==========\r\n'
+    clipping_separator = '\n==========\n'
     clipping_list = clippings_string.split(clipping_separator)[:-1]
 
     # Initialize dictionary and process each clipping.
@@ -316,7 +316,7 @@ def sorted_dict(adict):
     :param adict:
     '''
     keys = adict.keys()
-    keys[:] = sorted(keys, key=str.lower)
+    keys = sorted(keys, key=str.lower)
     return [(key, adict[key]) for key in keys]
 
 
