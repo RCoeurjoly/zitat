@@ -5,7 +5,6 @@ from behave import *
 dir_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(dir_path + "../../zitat.py")
 from zitat import *
-import re
 
 @given('the kindle timestamp "{kindle_timestamp}"')
 def step_impl(context, kindle_timestamp):

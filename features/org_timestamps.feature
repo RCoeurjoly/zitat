@@ -1653,3 +1653,5 @@ Scenario Outline: Multilingual kindle timestamp to org
       | kindle_timestamp                                  | org_timestamp         |
       | 添加于 2019年8月23日星期五 下午5:56:03                | [2019-08-23 17:56:03] |
       | Added on Monday, December 23, 2019 7:44:05 PM     | [2019-12-23 19:44:05] |
+      | Added on Monday, December 24, 2019 7:44:05 PM     | [2019-12-24 19:44:05] |
+      | Added on Monday, December 24, 2019 12:44:05 PM    | [2019-12-24 12:44:05] |

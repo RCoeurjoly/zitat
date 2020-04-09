@@ -244,7 +244,7 @@ def get_data(clippings):
 # ===============================================================================
     content = lines[3]
 
-    return author, title, cltype, location, date, content
+    return author, title, location, date, content
 
 def process_clipping(authors, clipping):
     '''
@@ -253,11 +253,7 @@ def process_clipping(authors, clipping):
     :param c: the clipping to process.
     '''
 
-    author, title, cltype, location, date, content = get_data(clipping)
-
-    # We process everything but Bookmarks (which have no text anyway).
-    if cltype in ['Bookmark']:
-        return
+    author, title, location, date, content = get_data(clipping)
 
     # Move articles to the end of the title. All determiners must be all
     # lowercase and end with a space for this to work.
@@ -280,26 +276,20 @@ def process_clipping(authors, clipping):
     # Get or create author entry (a dict of titles -> cltypes) in main dictionary.
     author_entry = authors.setdefault(author, {})
 
-    # Get or create title entry (a dict of cltypes->lists of clippings) in that author's dictionary.
-    title_entry = author_entry.setdefault(title, {})
-
-    # Get or create cltype entry (a list of clippings) in that title's dictionary.
-    cltype_list = title_entry.setdefault(cltype, [])
+    # Get or create title entry (a list of clippings) in that author's dictionary.
+    title_list = author_entry.setdefault(title, [])
 
     # New clipping becomes a tuple.
     new_entry = (location, date, content)
 
     # Append new tuple to the list.
-    cltype_list.append(new_entry)
+    title_list.append(new_entry)
 
-def import_clippings_file(filename):
+def parse_kindle_clippings(clippings_string):
     '''
-    Populate dictionary with contents of input file. Return dictionary.
+    Populate dictionary with contents of clippings string. Return dictionary.
     :param filename: input filename.
     '''
-
-    # Open and read file into string.
-    clippings_string = open_clippings_file(filename)
 
     # Split into list of clippings. Discard last, empty clipping.
     clipping_separator = '\n==========\n'
@@ -332,6 +322,11 @@ def export_author_org(author, out_file):
     heading = u'* {}\n\n'.format(author)
     out_file.write(heading)
 
+def format_author_to_org(author):
+    """
+    Format title heading.
+    """
+    return u'* {}\n\n'.format(author)
 
 def export_title_org(title, out_file):
     """
@@ -340,6 +335,11 @@ def export_title_org(title, out_file):
     heading = u'** {}\n\n'.format(title)
     out_file.write(heading)
 
+def format_title_to_org(title):
+    """
+    Format title heading.
+    """
+    return u'** {}\n\n'.format(title)
 
 def export_type_org(typ, out_file):
     '''
@@ -348,6 +348,11 @@ def export_type_org(typ, out_file):
     heading = u'*** {}\n\n'.format(typ)
     out_file.write(heading)
 
+def format_type_to_org(typ):
+    '''
+    Format type heading.
+    '''
+    return u'*** {}\n\n'.format(typ)
 
 def snippet(clipping, length):
     '''
@@ -365,6 +370,24 @@ def snippet(clipping, length):
     else:
         return clipping[:prefix]
 
+def kindle_clippings_to_org(kindle_clippings_string):
+    # Sort dictionary by Author | Title | Type | Location
+    # The last key is part of the content tuples.
+    # Note that sorted dicts become lists of values!!!
+
+    org_clipplings = str()
+    clippings_dict = parse_kindle_clippings(kindle_clippings_string)
+
+    sorted_authors = sorted_dict(clippings_dict)
+    for author, author_entry in sorted_authors:
+        org_clipplings += format_author_to_org(author)
+        sorted_titles = sorted_dict(author_entry)
+        for title, title_highlights in sorted_titles:
+            org_clipplings += format_title_to_org(title)
+            title_highlights = sort_clipping_list(title_highlights)
+            for clipping in title_highlights:
+                org_clipplings += format_content_to_org(clipping)
+    return org_clipplings
 
 def export_content_org(clipping, out_file):
     '''
@@ -386,6 +409,20 @@ def export_content_org(clipping, out_file):
 
     out_file.flush()
 
+
+def format_content_to_org(clipping):
+    '''
+    Format a single clipping to org mode.
+    :param c: clipping.
+    '''
+    location, date, content = clipping
+
+    hd_fill_col = 58
+    headline = u'*** {} --\n\n'.format(snippet(content, hd_fill_col))
+
+    location_and_date = u'\n\n/{}. {}./\n\n'. format(location, date)
+
+    return headline + content + location_and_date
 
 def roman_to_int(number):
     '''
@@ -449,7 +486,7 @@ def sort_clipping_list(clippings):
 
     return sorted(clippings, key=compute_srt_location)
 
-def export_to_org_file(clippings, out_filename, in_filename):
+def write_to_org_file(org_clippings_string, out_filename, in_filename):
     '''
     Export contents of dictionary to org text file.
     :param clippings: main dictionary.
@@ -465,25 +502,7 @@ def export_to_org_file(clippings, out_filename, in_filename):
         out_file.write(u'on ' + time.strftime('[%Y-%m-%d %H:%M:%S %Z]') + '\n')
         out_file.write(u'by the zitat script https://github.com/RCoeurjoly/zitat.')
         out_file.write(u'\n\n\n')
-
-        # Sort dictionary by Author | Title | Type | Location
-        # The last key is part of the content tuples.
-        # Note that sorted dicts become lists of values!!!
-        sorted_authors = sorted_dict(clippings)
-        for author, author_entry in sorted_authors:
-            export_author_org(author, out_file)
-            sorted_titles = sorted_dict(author_entry)
-            for title, title_entry in sorted_titles:
-                export_title_org(title, out_file)
-                sorted_types = sorted_dict(title_entry)
-                title_highlights = list()
-                for typ, type_entry in sorted_types:
-                    # export_type_org(typ, out_file)
-                    typ += ''
-                    title_highlights += type_entry
-                title_highlights = sort_clipping_list(title_highlights)
-                for clipping in title_highlights:
-                    export_content_org(clipping, out_file)
+        out_file.write(org_clippings_string)
         out_file.close()
     except IOError:
         print('Error writing ' + out_filename + '.')
@@ -527,15 +546,17 @@ def zitat(argv):
         if output_filename == '':
             output_filename = output_filename_sugg
 
-    # Open file and import it to dictionary.
+    # Read file intro string
     print('Reading', input_filename + '.')
-    clippings = import_clippings_file(input_filename)
+    kindle_clippings_string = open_clippings_file(input_filename)
+    print(kindle_clippings_string)
+    # Convert kindle string to org mode string
+    org_clippings_string = kindle_clippings_to_org(kindle_clippings_string)
 
-    # Export contents of dictionary to output file.
+    # Write org mode string to output file.
     print('Writing', output_filename + '.')
-    export_to_org_file(clippings, output_filename, input_filename)
+    write_to_org_file(org_clippings_string, output_filename, input_filename)
     print('Done.\n')
-
 
 if __name__ == '__main__':
     zitat(sys.argv)
