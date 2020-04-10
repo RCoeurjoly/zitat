@@ -33,7 +33,6 @@ URL: http://sagallesab.wordpress.com/zitat
 '''
 import codecs
 import sys
-import time
 import re
 
 
