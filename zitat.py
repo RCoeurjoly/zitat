@@ -314,39 +314,17 @@ def sorted_dict(adict):
     keys = sorted(keys, key=str.lower)
     return [(key, adict[key]) for key in keys]
 
-
-def export_author_org(author, out_file):
-    """
-    Write title heading.
-    """
-    heading = u'* {}\n\n'.format(author)
-    out_file.write(heading)
-
 def format_author_to_org(author):
     """
     Format title heading.
     """
     return u'* {}\n'.format(author)
 
-def export_title_org(title, out_file):
-    """
-    Write title heading.
-    """
-    heading = u'** {}\n\n'.format(title)
-    out_file.write(heading)
-
 def format_title_to_org(title):
     """
     Format title heading.
     """
     return u'** {}\n'.format(title)
-
-def export_type_org(typ, out_file):
-    '''
-    Write type heading.
-    '''
-    heading = u'*** {}\n\n'.format(typ)
-    out_file.write(heading)
 
 def format_type_to_org(typ):
     '''
@@ -369,27 +347,6 @@ def snippet(clipping, length):
         return clipping[:length]
     else:
         return clipping[:prefix]
-
-def export_content_org(clipping, out_file):
-    '''
-    Export a single clipping to the output org file.
-    :param c: clipping.
-    :param f: output file.
-    '''
-
-    loc, dat, content = clipping
-
-    hd_fill_col = 58
-
-    headline = u'*** {} --\n\n'.format(snippet(content, hd_fill_col))
-    out_file.write(headline)
-
-    out_file.write(content + '\n\n')
-
-    out_file.write(u'/{}. {}./\n\n'. format(loc, dat))
-
-    out_file.flush()
-
 
 def format_content_to_org(clipping):
     '''
