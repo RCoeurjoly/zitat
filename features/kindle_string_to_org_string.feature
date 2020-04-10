@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-Feature: kindle generated clippings are converted to org mode
+Feature: kindle generated clippings strings are converted to org mode strings
 
   Scenario: a single Kindle clippings should be converted to valid org mode
     Given the kindle generated clipping
@@ -22,7 +22,7 @@ Feature: kindle generated clippings are converted to org mode
 
       """
 
-  Scenario: several clippings from the same author and title should be ordered by location
+  Scenario: several clippings from the same author and title should be ordered by location inside the book
     Given the kindle generated clipping
       """
       Obras completas (Epicuro)

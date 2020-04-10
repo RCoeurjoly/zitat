@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from hamcrest import assert_that, equal_to
 from behave import given, when, then
 from zitat import EN_kindle_timestamp_to_ISO_8601, ZH_kindle_timestamp_to_ISO_8601, kindle_timestamp_to_ISO_8601
 
@@ -25,4 +26,4 @@ def step_impl(context):  # noqa: F811
 
 @then('we should have the org timestamp "{org_timestamp}"')
 def step_impl(context, org_timestamp):  # noqa: F811
-    assert context.expected_org_timestamp == org_timestamp
+    assert_that(context.expected_org_timestamp, equal_to(org_timestamp))

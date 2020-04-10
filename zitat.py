@@ -481,13 +481,6 @@ def write_to_org_file(org_clippings_string, out_filename, in_filename):
 
     try:
         out_file = codecs.open(out_filename, 'w', encoding='utf-8')
-
-        # Write a couple of empty lines and info about file.
-        out_file.write(u'\n\n')
-        out_file.write(u'Generated from clippings in file ' + in_filename + '\n')
-        out_file.write(u'on ' + time.strftime('[%Y-%m-%d %H:%M:%S %Z]') + '\n')
-        out_file.write(u'by the zitat script https://github.com/RCoeurjoly/zitat.')
-        out_file.write(u'\n\n\n')
         out_file.write(org_clippings_string)
         out_file.close()
     except IOError:
