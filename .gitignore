@@ -5,4 +5,5 @@ GRTAGS
 GSYMS
 GTAGS
 *.txt
-features/temp/
+features/temp/*.txt
+features/temp/*.org
