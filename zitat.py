@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#!/usr/bin/env python
+# !/usr/bin/env python
 
 #   zitat.py: reads and converts Kindle clippings files.
 #   Version 1.0
@@ -36,6 +36,7 @@ import sys
 import time
 import re
 
+
 def kindle_timestamp_to_ISO_8601(timestamp):
     language_function_equivalence = {"Added on":   EN_kindle_timestamp_to_ISO_8601,
                                      "添加于":      ZH_kindle_timestamp_to_ISO_8601}
@@ -43,6 +44,7 @@ def kindle_timestamp_to_ISO_8601(timestamp):
     for language_signature in language_function_equivalence:
         if re.search(language_signature, timestamp):
             return language_function_equivalence[language_signature](timestamp)
+
 
 def get_EN_month(day_section):
     months_equivalence = {"January":   "01",
@@ -61,11 +63,14 @@ def get_EN_month(day_section):
         if re.search(month, day_section):
             return months_equivalence[month]
 
+
 def get_EN_day_section(kindle_timestamp):
     return re.search(r'.*?,(.*?),', kindle_timestamp).group(1)
 
+
 def get_EN_year_time_section(kindle_timestamp):
     return re.search(r'.*?,.*?,(.*?)$', kindle_timestamp).group(1)
+
 
 def get_EN_day(day_section):
     day = re.search(r'\d{1,2}$', day_section).group(0)
@@ -73,28 +78,34 @@ def get_EN_day(day_section):
         return "0" + day
     return day
 
+
 def get_EN_year(year_time_section):
     return re.search(r'\s*(\d{4})', year_time_section).group(1)
+
 
 def get_EN_period(year_time_section):
     return re.search(r'([A-Z]{2})$', year_time_section).group(1)
 
+
 def get_EN_time(year_time_section):
     return re.search(r'(\d{1,2}:\d{2}:\d{2})\s..$', year_time_section).group(1)
+
 
 def calculate_ISO_8601_date(year, month, day):
     return str(year) + "-" + str(month) + "-" + str(day)
 
+
 def calculate_ISO_8601_time(unadjusted_time, period):
-    partitioned_time=re.search(r'(\d{1,2}):(\d{2}:\d{2})$', unadjusted_time)
-    unadjusted_hour=int(partitioned_time.group(1))
-    minutes_and_seconds=partitioned_time.group(2)
+    partitioned_time = re.search(r'(\d{1,2}):(\d{2}:\d{2})$', unadjusted_time)
+    unadjusted_hour = int(partitioned_time.group(1))
+    minutes_and_seconds = partitioned_time.group(2)
     assert period == "PM" or period == "AM"
     if period == "PM" and unadjusted_hour < 12:
-        adjusted_hour=unadjusted_hour + 12
+        adjusted_hour = unadjusted_hour + 12
     else:
-        adjusted_hour=unadjusted_hour
+        adjusted_hour = unadjusted_hour
     return str(adjusted_hour) + ":" + minutes_and_seconds
+
 
 def EN_kindle_timestamp_to_ISO_8601(EN_kindle_timestamp):
     '''
@@ -116,11 +127,13 @@ def EN_kindle_timestamp_to_ISO_8601(EN_kindle_timestamp):
 
     return "[" + date + " " + time + "]"
 
+
 def get_ZH_month(ZH_kindle_timestamp):
     month = re.search(r'(\d{1,2})月', ZH_kindle_timestamp).group(1)
     if int(month) < 10:
         return "0" + month
     return month
+
 
 def get_ZH_day(ZH_kindle_timestamp):
     day = re.search(r'(\d{1,2})日', ZH_kindle_timestamp).group(1)
@@ -128,16 +141,20 @@ def get_ZH_day(ZH_kindle_timestamp):
         return "0" + day
     return day
 
+
 def get_ZH_year(ZH_kindle_timestamp):
     return re.search(r'(\d{4})年', ZH_kindle_timestamp).group(1)
+
 
 def get_ZH_period(ZH_kindle_timestamp):
     if re.search(r'(.)午', ZH_kindle_timestamp).group(1) == "下":
         return "PM"
     return "AM"
 
+
 def get_ZH_time(ZH_kindle_timestamp):
     return re.search(r'午(\d{1,2}:\d{2}:\d{2})$', ZH_kindle_timestamp).group(1)
+
 
 def ZH_kindle_timestamp_to_ISO_8601(ZH_kindle_timestamp):
     '''
@@ -159,6 +176,7 @@ def ZH_kindle_timestamp_to_ISO_8601(ZH_kindle_timestamp):
 
     return "[" + date + " " + time + "]"
 
+
 def open_clippings_file(filename):
     '''
     Try to open file and read it into one unicode string. Return string.
@@ -178,13 +196,14 @@ def open_clippings_file(filename):
 
     try:
         in_file = open(filename)
-        file_as_string =  in_file.read()
+        file_as_string = in_file.read()
         in_file.close()
         return file_as_string
     except IOError:
         print('Error reading ' + filename + '.')
         print('Exiting.')
         sys.exit(1)
+
 
 def get_data(clippings):
     '''
@@ -228,7 +247,6 @@ def get_data(clippings):
 
     # cltype is first word of first field.
     words = fields[0].split()
-    cltype = words[0]
 
     # location is word 1 or 2. If word 1 is 'on', then word 2 is 'Page'.
     if words[1] == 'on':
@@ -245,6 +263,7 @@ def get_data(clippings):
     content = lines[3]
 
     return author, title, location, date, content
+
 
 def process_clipping(authors, clipping):
     '''
@@ -285,6 +304,7 @@ def process_clipping(authors, clipping):
     # Append new tuple to the list.
     title_list.append(new_entry)
 
+
 def parse_kindle_clippings(clippings_string):
     '''
     Populate dictionary with contents of clippings string. Return dictionary.
@@ -314,11 +334,13 @@ def sorted_dict(adict):
     keys = sorted(keys, key=str.lower)
     return [(key, adict[key]) for key in keys]
 
+
 def format_author_to_org(author):
     """
     Format title heading.
     """
     return u'* {}\n'.format(author)
+
 
 def format_title_to_org(title):
     """
@@ -326,11 +348,13 @@ def format_title_to_org(title):
     """
     return u'** {}\n'.format(title)
 
+
 def format_type_to_org(typ):
     '''
     Format type heading.
     '''
     return u'*** {}\n'.format(typ)
+
 
 def snippet(clipping, length):
     '''
@@ -348,6 +372,7 @@ def snippet(clipping, length):
     else:
         return clipping[:prefix]
 
+
 def format_content_to_org(clipping):
     '''
     Format a single clipping to org mode.
@@ -362,24 +387,26 @@ def format_content_to_org(clipping):
 
     return headline + content + location_and_date
 
+
 def kindle_clippings_to_org(kindle_clippings_string):
     # Sort dictionary by Author | Title | Type | Location
     # The last key is part of the content tuples.
     # Note that sorted dicts become lists of values!!!
 
-    org_clipplings = str()
+    org_clippings = str()
     clippings_dict = parse_kindle_clippings(kindle_clippings_string)
 
     sorted_authors = sorted_dict(clippings_dict)
     for author, author_entry in sorted_authors:
-        org_clipplings += format_author_to_org(author)
+        org_clippings += format_author_to_org(author)
         sorted_titles = sorted_dict(author_entry)
         for title, title_highlights in sorted_titles:
-            org_clipplings += format_title_to_org(title)
+            org_clippings += format_title_to_org(title)
             title_highlights = sort_clipping_list(title_highlights)
             for clipping in title_highlights:
-                org_clipplings += format_content_to_org(clipping)
-    return org_clipplings
+                org_clippings += format_content_to_org(clipping)
+    return org_clippings
+
 
 def roman_to_int(number):
     '''
@@ -442,6 +469,7 @@ def sort_clipping_list(clippings):
     '''
 
     return sorted(clippings, key=compute_srt_location)
+
 
 def write_to_org_file(org_clippings_string, out_filename, in_filename):
     '''
@@ -514,6 +542,7 @@ def zitat(argv):
     print('Writing', output_filename + '.')
     write_to_org_file(org_clippings_string, output_filename, input_filename)
     print('Done.\n')
+
 
 if __name__ == '__main__':
     zitat(sys.argv)
