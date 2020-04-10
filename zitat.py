@@ -195,7 +195,7 @@ def open_clippings_file(filename):
     # This is Amazon following in Microsoft's footsteps... A bad sign.
 
     try:
-        in_file = open(filename)
+        in_file = open(filename, mode='r', encoding='utf-8-sig')
         file_as_string = in_file.read()
         in_file.close()
         return file_as_string
@@ -393,6 +393,7 @@ def kindle_clippings_to_org(kindle_clippings_string):
     # The last key is part of the content tuples.
     # Note that sorted dicts become lists of values!!!
 
+    kindle_clippings_string = kindle_clippings_string.replace(u'\ufeff', '')
     org_clippings = str()
     clippings_dict = parse_kindle_clippings(kindle_clippings_string)
 
@@ -534,7 +535,6 @@ def zitat(argv):
     # Read file intro string
     print('Reading', input_filename + '.')
     kindle_clippings_string = open_clippings_file(input_filename)
-    print(kindle_clippings_string)
     # Convert kindle string to org mode string
     org_clippings_string = kindle_clippings_to_org(kindle_clippings_string)
 

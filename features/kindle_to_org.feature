@@ -88,7 +88,7 @@ Feature: kindle generated clippings are converted to org mode
       Punished by Rewards (Alfie Kohn)
       - Your Highlight on Location 104-106 | Added on Monday, December 9, 2019 11:45:44 PM
 
-      The core of pop behaviorism is "Do this and you'll get that." The wisdom of this technique is very rarely held up for inspection; all that is open to question is what exactly people will receive and under what circumstances it will be promised and delivered.
+      The core of pop behaviorism is \"Do this and you'll get that.\" The wisdom of this technique is very rarely held up for inspection; all that is open to question is what exactly people will receive and under what circumstances it will be promised and delivered.
       ==========
       No Contest (Alfie Kohn)
       - Your Highlight on Location 3811-3813 | Added on Monday, December 9, 2019 11:11:05 PM
@@ -106,8 +106,8 @@ Feature: kindle generated clippings are converted to org mode
       Despite the productivity and sense of fulfillment that come from working together, we often act as if cooperation is something for which we must sit passively and wait, like a beautiful sunset. In fact, there is scarcely an arena of human life which cannot be transformed into a cooperative enterprise.
       /Highlight on Location 3811-3813. [2019-12-09 23:11:05]./
       ** Punished by Rewards
-      *** The core of pop behaviorism is "Do this and you'll get --
-      The core of pop behaviorism is "Do this and you'll get that." The wisdom of this technique is very rarely held up for inspection; all that is open to question is what exactly people will receive and under what circumstances it will be promised and delivered.
+      *** The core of pop behaviorism is \"Do this and you'll get --
+      The core of pop behaviorism is \"Do this and you'll get that.\" The wisdom of this technique is very rarely held up for inspection; all that is open to question is what exactly people will receive and under what circumstances it will be promised and delivered.
       /Highlight on Location 104-106. [2019-12-09 23:45:44]./
 
       """
@@ -130,5 +130,44 @@ Feature: kindle generated clippings are converted to org mode
       *** 最高的善就像水一样，水善于滋润万物却不与其争短长。它总是停留在众人不愿去的低洼之地，这种品德，最接近于“道”。上善的 --
       最高的善就像水一样，水善于滋润万物却不与其争短长。它总是停留在众人不愿去的低洼之地，这种品德，最接近于“道”。上善的人总是甘居卑下的环境，心胸善于保持沉静而深远博大，待人善于相助、真诚可亲，说话善于信守诺言，为政善于治理，办事善于发挥所长，行动善于把握时机。正因为有不争的美德，所以才不会出现过失，招来怨咎
       /Highlight on Location 1355-1358. [2019-12-23 18:23:03]./
+
+      """
+
+  Scenario: if the book title contains the Byte order mark (U+FEFF), it should be removed
+    Given the kindle generated clipping
+      """
+      ﻿Your Money or Your Life (Vicki Robin)
+      - Your Highlight on Location 215-215 | Added on Tuesday, January 3, 2017 10:13:51 AM
+
+      It corrodes society and the psyche—saps our belief in justice and fairness and hope.
+      ==========
+      黃金時代 (王小波)
+      - Your Highlight on Location 365-365 | Added on Monday, February 13, 2017 5:09:34 PM
+
+      沒必要做的事就別做
+      ==========
+      Your Money or Your Life (Vicki Robin)
+      - Your Highlight on Location 2560-2561 | Added on Thursday, February 16, 2017 10:15:25 AM
+
+      What do you now spend to simply compensate for doing a job that claims the majority of your waking hours?
+      ==========
+
+      """
+    When we convert the clipping to org format
+    Then we should get the org clipping
+      """
+      * Vicki Robin
+      ** Your Money or Your Life
+      *** It corrodes society and the psyche—saps our belief in --
+      It corrodes society and the psyche—saps our belief in justice and fairness and hope.
+      /Highlight on Location 215-215. [2017-01-03 10:13:51]./
+      *** What do you now spend to simply compensate for doing a job --
+      What do you now spend to simply compensate for doing a job that claims the majority of your waking hours?
+      /Highlight on Location 2560-2561. [2017-02-16 10:15:25]./
+      * 王小波
+      ** 黃金時代
+      *** 沒必要做的事就別做 --
+      沒必要做的事就別做
+      /Highlight on Location 365-365. [2017-02-13 17:09:34]./
 
       """
