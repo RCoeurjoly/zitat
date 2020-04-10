@@ -326,7 +326,7 @@ def format_author_to_org(author):
     """
     Format title heading.
     """
-    return u'* {}\n\n'.format(author)
+    return u'* {}\n'.format(author)
 
 def export_title_org(title, out_file):
     """
@@ -339,7 +339,7 @@ def format_title_to_org(title):
     """
     Format title heading.
     """
-    return u'** {}\n\n'.format(title)
+    return u'** {}\n'.format(title)
 
 def export_type_org(typ, out_file):
     '''
@@ -352,7 +352,7 @@ def format_type_to_org(typ):
     '''
     Format type heading.
     '''
-    return u'*** {}\n\n'.format(typ)
+    return u'*** {}\n'.format(typ)
 
 def snippet(clipping, length):
     '''
@@ -369,25 +369,6 @@ def snippet(clipping, length):
         return clipping[:length]
     else:
         return clipping[:prefix]
-
-def kindle_clippings_to_org(kindle_clippings_string):
-    # Sort dictionary by Author | Title | Type | Location
-    # The last key is part of the content tuples.
-    # Note that sorted dicts become lists of values!!!
-
-    org_clipplings = str()
-    clippings_dict = parse_kindle_clippings(kindle_clippings_string)
-
-    sorted_authors = sorted_dict(clippings_dict)
-    for author, author_entry in sorted_authors:
-        org_clipplings += format_author_to_org(author)
-        sorted_titles = sorted_dict(author_entry)
-        for title, title_highlights in sorted_titles:
-            org_clipplings += format_title_to_org(title)
-            title_highlights = sort_clipping_list(title_highlights)
-            for clipping in title_highlights:
-                org_clipplings += format_content_to_org(clipping)
-    return org_clipplings
 
 def export_content_org(clipping, out_file):
     '''
@@ -418,11 +399,30 @@ def format_content_to_org(clipping):
     location, date, content = clipping
 
     hd_fill_col = 58
-    headline = u'*** {} --\n\n'.format(snippet(content, hd_fill_col))
+    headline = u'*** {} --\n'.format(snippet(content, hd_fill_col))
 
-    location_and_date = u'\n\n/{}. {}./\n\n'. format(location, date)
+    location_and_date = u'\n/{}. {}./\n'. format(location, date)
 
     return headline + content + location_and_date
+
+def kindle_clippings_to_org(kindle_clippings_string):
+    # Sort dictionary by Author | Title | Type | Location
+    # The last key is part of the content tuples.
+    # Note that sorted dicts become lists of values!!!
+
+    org_clipplings = str()
+    clippings_dict = parse_kindle_clippings(kindle_clippings_string)
+
+    sorted_authors = sorted_dict(clippings_dict)
+    for author, author_entry in sorted_authors:
+        org_clipplings += format_author_to_org(author)
+        sorted_titles = sorted_dict(author_entry)
+        for title, title_highlights in sorted_titles:
+            org_clipplings += format_title_to_org(title)
+            title_highlights = sort_clipping_list(title_highlights)
+            for clipping in title_highlights:
+                org_clipplings += format_content_to_org(clipping)
+    return org_clipplings
 
 def roman_to_int(number):
     '''

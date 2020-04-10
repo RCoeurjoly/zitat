@@ -15,14 +15,9 @@ Feature: kindle generated clippings are converted to org mode
     Then we should get the org clipping
     """
     * Epicuro
-
     ** Obras completas
-
     *** Acostúmbrate a pensar que la muerte no tiene nada que ver --
-
     Acostúmbrate a pensar que la muerte no tiene nada que ver con nosotros, porque todo bien y todo mal radica en la sensación, y la muerte es la privación de sensación. De ahí que la idea correcta de que la muerte no tiene nada que ver con nosotros hace gozosa la mortalidad de la vida, no porque añada un tiempo infinito sino porque quita las ansias de inmortalidad.
-
     /Highlight on Location 1186-1188. [2019-12-27 13:48:52]./
-
 
       """
