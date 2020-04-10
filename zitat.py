@@ -35,6 +35,9 @@ import codecs
 import sys
 import re
 
+if sys.version_info < (3, 5):
+    print("Zitat requires Python 3.5")
+    sys.exit(1)
 
 def kindle_timestamp_to_ISO_8601(timestamp):
     language_function_equivalence = {"Added on":   EN_kindle_timestamp_to_ISO_8601,
