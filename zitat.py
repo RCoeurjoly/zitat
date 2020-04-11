@@ -232,7 +232,7 @@ def get_data(clippings):
         if position == -1:
             author = u'Unknown'
         else:
-            author = lines[0][position + 1:-1]
+            author = lines[0][position + 1:-1].strip()
 
 # ===============================================================================
 #   title is from beginning of line 0 to just before rightmost '('.
@@ -267,7 +267,7 @@ def get_data(clippings):
 # ===============================================================================
 # Line 2 is always blank. Line 3 is the contents.
 # ===============================================================================
-    content = lines[3]
+    content = lines[3].strip()
 
     return author, title, location, date, content
 
