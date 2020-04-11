@@ -34,6 +34,7 @@ URL: http://sagallesab.wordpress.com/zitat
 import codecs
 import sys
 import re
+from hamcrest import assert_that, equal_to, is_in
 
 if sys.version_info < (3, 5):
     print("Zitat requires Python 3.5")
@@ -63,6 +64,7 @@ def get_EN_month(day_section):
                           "December":  "12"}
     for month in months_equivalence:
         if re.search(month, day_section):
+            assert_that(len(months_equivalence[month]), equal_to(2))
             return months_equivalence[month]
 
 
@@ -101,7 +103,8 @@ def calculate_ISO_8601_time(unadjusted_time, period):
     partitioned_time = re.search(r'(\d{1,2}):(\d{2}:\d{2})$', unadjusted_time)
     unadjusted_hour = int(partitioned_time.group(1))
     minutes_and_seconds = partitioned_time.group(2)
-    assert period == "PM" or period == "AM"
+    assert_that(len(minutes_and_seconds), equal_to(5))
+    assert_that(period, is_in(["AM","PM"]))
     if period == "PM" and unadjusted_hour < 12:
         adjusted_hour = unadjusted_hour + 12
     else:
@@ -125,7 +128,10 @@ def EN_kindle_timestamp_to_ISO_8601(EN_kindle_timestamp):
     period = get_EN_period(year_time_section)
 
     date = calculate_ISO_8601_date(year, month, day)
+    assert_that(len(date), equal_to(10))
+
     time = calculate_ISO_8601_time(unadjusted_time, period)
+    assert_that(len(time), is_in([7, 8]))
 
     return "[" + date + " " + time + "]"
 
