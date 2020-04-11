@@ -7,3 +7,5 @@ GTAGS
 *.txt
 features/temp/*.txt
 features/temp/*.org
+.coverage
+htmlcov/

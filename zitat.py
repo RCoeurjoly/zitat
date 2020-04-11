@@ -203,9 +203,8 @@ def open_clippings_file(filename):
     # This is Amazon following in Microsoft's footsteps... A bad sign.
 
     try:
-        in_file = open(filename, mode='r', encoding='utf-8-sig')
-        file_as_string = in_file.read()
-        in_file.close()
+        with open(filename, mode='r', encoding='utf-8-sig') as in_file:
+            file_as_string = in_file.read()
         return file_as_string
     except IOError:
         print('Error reading ' + filename + '.')
@@ -284,16 +283,20 @@ def process_clipping(authors, clipping):
 
     # Move articles to the end of the title. All determiners must be all
     # lowercase and end with a space for this to work.
-    determiners = ('the ',
+    determiners = ('the ',  # English
                    'a ',
                    'an ',
-                   'o ',
+                   'el ',   # Spanish
+                   'la ',
+                   'los ',
+                   'las ',
+                   'o ',    # Portuguese
                    'os ',
                    'as ',
-                   'le ',
+                   'le ',   # French
                    'les ',
                    'la ',
-                   'der ',
+                   'der ',  # German
                    'die ',
                    'das ')
     if title.lower().startswith(determiners):
@@ -357,13 +360,6 @@ def format_title_to_org(title):
     return u'** {}\n'.format(title)
 
 
-def format_type_to_org(typ):
-    '''
-    Format type heading.
-    '''
-    return u'*** {}\n'.format(typ)
-
-
 def snippet(clipping, length):
     '''
     Return prefix of clipping that is at most length chars long.
@@ -417,22 +413,22 @@ def kindle_clippings_to_org(kindle_clippings_string):
     return org_clippings
 
 
-def roman_to_int(number):
+def roman_to_int(roman_number):
     '''
     Convert roman number to int (from http://code.activestate.com/recipes/81611-roman-numerals/).
     :param n: string containing roman number.
     '''
 
     numeral_map = zip(
-        (1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1),
+        (1000, 900, 500,  400, 100,   90,  50,   40,  10,    9,   5,    4,   1),
         ('M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I')
     )
 
-    number = number.upper()
+    roman_number = roman_number.upper()
 
     i = result = 0
     for integer, numeral in numeral_map:
-        while number[i:i + len(numeral)] == numeral:
+        while roman_number[i:i + len(numeral)] == numeral:
             result += integer
             i += len(numeral)
 
@@ -480,7 +476,7 @@ def sort_clipping_list(clippings):
     return sorted(clippings, key=compute_srt_location)
 
 
-def write_to_org_file(org_clippings_string, out_filename, in_filename):
+def write_to_org_file(org_clippings_string, out_filename):
     '''
     Export contents of dictionary to org text file.
     :param clippings: main dictionary.
@@ -488,9 +484,8 @@ def write_to_org_file(org_clippings_string, out_filename, in_filename):
     '''
 
     try:
-        out_file = codecs.open(out_filename, 'w', encoding='utf-8')
-        out_file.write(org_clippings_string)
-        out_file.close()
+        with codecs.open(out_filename, 'w', encoding='utf-8') as out_file:
+            out_file.write(org_clippings_string)
     except IOError:
         print('Error writing ' + out_filename + '.')
         print('Exiting.')
@@ -541,7 +536,7 @@ def zitat(argv):
 
     # Write org mode string to output file.
     print('Writing', output_filename + '.')
-    write_to_org_file(org_clippings_string, output_filename, input_filename)
+    write_to_org_file(org_clippings_string, output_filename)
     print('Done.\n')
 
 
