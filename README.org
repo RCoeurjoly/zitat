@@ -1,4 +1,71 @@
 * [[https://sagallesab.wordpress.com/zitat/][zitat]]
-Kindle clipping to org-mode converter
+  Kindle clipping to org-mode converter
 
 Fork from https://sagallesab.wordpress.com/zitat/
+* Installation
+  #+begin_src shell :shebang #!/bin/bash -i :results output
+cd ~/zitat
+python3 -m venv env
+source env/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+  #+end_src
+
+  #+RESULTS:
+  #+begin_example
+  Collecting behave==1.2.6 (from -r requirements.txt (line 1))
+    Using cached https://files.pythonhosted.org/packages/a8/6c/ec9169548b6c4cb877aaa6773408ca08ae2a282805b958dbc163cb19822d/behave-1.2.6-py2.py3-none-any.whl
+  Collecting entrypoints==0.3 (from -r requirements.txt (line 2))
+    Using cached https://files.pythonhosted.org/packages/ac/c6/44694103f8c221443ee6b0041f69e2740d89a25641e62fb4f2ee568f2f9c/entrypoints-0.3-py2.py3-none-any.whl
+  Collecting enum34==1.1.10 (from -r requirements.txt (line 3))
+    Using cached https://files.pythonhosted.org/packages/63/f6/ccb1c83687756aeabbf3ca0f213508fcfb03883ff200d201b3a4c60cedcc/enum34-1.1.10-py3-none-any.whl
+  Collecting flake8==3.7.9 (from -r requirements.txt (line 4))
+    Using cached https://files.pythonhosted.org/packages/f8/1f/7ea40d1e4146ea55dbab41cda1376db092a75794914169aabd7e8d7a7def/flake8-3.7.9-py2.py3-none-any.whl
+  Collecting linecache2==1.0.0 (from -r requirements.txt (line 5))
+    Using cached https://files.pythonhosted.org/packages/c7/a3/c5da2a44c85bfbb6eebcfc1dde24933f8704441b98fdde6528f4831757a6/linecache2-1.0.0-py2.py3-none-any.whl
+  Collecting mccabe==0.6.1 (from -r requirements.txt (line 6))
+    Using cached https://files.pythonhosted.org/packages/87/89/479dc97e18549e21354893e4ee4ef36db1d237534982482c3681ee6e7b57/mccabe-0.6.1-py2.py3-none-any.whl
+  Collecting parse==1.15.0 (from -r requirements.txt (line 7))
+    Using cached https://files.pythonhosted.org/packages/f4/65/220bb4075fddb09d5b3ea2c1c1fa66c1c72be9361ec187aab50fa161e576/parse-1.15.0.tar.gz
+  Collecting parse-type==0.5.2 (from -r requirements.txt (line 8))
+    Using cached https://files.pythonhosted.org/packages/1b/81/2a168b41acb57f1ea8e1e09937f585a0b9105557b13562ff8655fea81c09/parse_type-0.5.2-py2.py3-none-any.whl
+  Collecting pycodestyle==2.5.0 (from -r requirements.txt (line 9))
+    Using cached https://files.pythonhosted.org/packages/0e/0c/04a353e104d2f324f8ee5f4b32012618c1c86dd79e52a433b64fceed511b/pycodestyle-2.5.0-py2.py3-none-any.whl
+  Collecting pyflakes==2.1.1 (from -r requirements.txt (line 10))
+    Using cached https://files.pythonhosted.org/packages/84/f2/ed0ffb887f8138a8fe5a621b8c0bb9598bfb3989e029f6c6a85ee66628ee/pyflakes-2.1.1-py2.py3-none-any.whl
+  Collecting PyHamcrest==2.0.2 (from -r requirements.txt (line 11))
+    Using cached https://files.pythonhosted.org/packages/40/16/e54cc65891f01cb62893540f44ffd3e8dab0a22443e1b438f1a9f5574bee/PyHamcrest-2.0.2-py3-none-any.whl
+  Collecting six==1.14.0 (from -r requirements.txt (line 12))
+    Using cached https://files.pythonhosted.org/packages/65/eb/1f97cb97bfc2390a276969c6fae16075da282f5058082d4cb10c6c5c1dba/six-1.14.0-py2.py3-none-any.whl
+  Collecting traceback2==1.4.0 (from -r requirements.txt (line 13))
+    Using cached https://files.pythonhosted.org/packages/17/0a/6ac05a3723017a967193456a2efa0aa9ac4b51456891af1e2353bb9de21e/traceback2-1.4.0-py2.py3-none-any.whl
+  Collecting wheel==0.35.1 (from -r requirements.txt (line 14))
+    Using cached https://files.pythonhosted.org/packages/a7/00/3df031b3ecd5444d572141321537080b40c1c25e1caa3d86cdd12e5e919c/wheel-0.35.1-py2.py3-none-any.whl
+  Building wheels for collected packages: parse
+    Running setup.py bdist_wheel for parse: started
+    Running setup.py bdist_wheel for parse: finished with status 'error'
+    Complete output from command /home/roland/zitat/env/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-gm8i2wwc/parse/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/pip-wheel-naenw5gw --python-tag cp37:
+    usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+       or: -c --help [cmd1 cmd2 ...]
+       or: -c --help-commands
+       or: -c cmd --help
+
+    error: invalid command 'bdist_wheel'
+
+    ----------------------------------------
+    Running setup.py clean for parse
+  Failed to build parse
+  Installing collected packages: six, parse, parse-type, behave, entrypoints, enum34, mccabe, pycodestyle, pyflakes, flake8, linecache2, PyHamcrest, traceback2, wheel
+    Running setup.py install for parse: started
+      Running setup.py install for parse: finished with status 'done'
+  Successfully installed PyHamcrest-2.0.2 behave-1.2.6 entrypoints-0.3 enum34-1.1.10 flake8-3.7.9 linecache2-1.0.0 mccabe-0.6.1 parse-1.15.0 parse-type-0.5.2 pycodestyle-2.5.0 pyflakes-2.1.1 six-1.14.0 traceback2-1.4.0 wheel-0.35.1
+  #+end_example
+
+* Usage
+  #+begin_src shell :shebang #!/bin/bash -i :results output
+python ~/path/clippings.txt ~/path/output.org
+  #+end_src
+* Testing
+  #+begin_src shell :shebang #!/bin/bash -i :results output
+behave
+  #+end_src
