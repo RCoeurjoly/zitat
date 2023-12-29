@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 pyhamcrest = "^2.1.0"
+orgparse = "^0.4.20231004"
 
 
 [build-system]
