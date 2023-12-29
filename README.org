@@ -2,7 +2,14 @@
   Kindle clipping to org-mode converter
 
 Fork from https://sagallesab.wordpress.com/zitat/
-* Installation
+* nix
+#+begin_src shell :shebang #!/bin/bash -i :results output
+nix develop
+python ./zitat.py /home/roland/Clippings.txt /home/roland/my_clippings/clippings.org
+#+end_src
+
+* Old instructions
+** Installation
   #+begin_src shell :shebang #!/bin/bash -i :results output
 cd ~/zitat
 python3 -m venv env
@@ -60,12 +67,11 @@ pip install -r requirements.txt
       Running setup.py install for parse: finished with status 'done'
   Successfully installed PyHamcrest-2.0.2 behave-1.2.6 entrypoints-0.3 enum34-1.1.10 flake8-3.7.9 linecache2-1.0.0 mccabe-0.6.1 parse-1.15.0 parse-type-0.5.2 pycodestyle-2.5.0 pyflakes-2.1.1 six-1.14.0 traceback2-1.4.0 wheel-0.35.1
   #+end_example
-
-* Usage
+** Usage
   #+begin_src shell :shebang #!/bin/bash -i :results output
 python ~/path/clippings.txt ~/path/output.org
   #+end_src
-* Testing
+** Testing
   #+begin_src shell :shebang #!/bin/bash -i :results output
 behave
   #+end_src
