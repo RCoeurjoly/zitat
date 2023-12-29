@@ -19,7 +19,10 @@
       in
       {
         packages = {
-          myapp = mkPoetryApplication { projectDir = self; };
+          myapp = mkPoetryApplication {
+            projectDir = self;
+            # overrides = poetry2nix.lib.defaultPoetryOverrides;
+          };
           default = self.packages.${system}.myapp;
         };
 
