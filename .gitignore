@@ -9,3 +9,4 @@ features/temp/*.txt
 features/temp/*.org
 .coverage
 htmlcov/
+result
