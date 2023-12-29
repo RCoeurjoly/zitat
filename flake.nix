@@ -5,7 +5,8 @@
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     poetry2nix = {
-      url = "github:nix-community/poetry2nix";
+      # url = "github:nix-community/poetry2nix";
+      url = "github:RCoeurjoly/poetry2nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -17,7 +18,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         inherit (poetry2nix.lib.mkPoetry2Nix { inherit pkgs; }) mkPoetryApplication defaultPoetryOverrides;
         pypkgs-build-requirements = {
-          orgparse = [ "setuptools" ];
+          # orgparse = [ "setuptools" ];
         };
         p2n-overrides = defaultPoetryOverrides.extend (self: super:
           builtins.mapAttrs (package: build-requirements:
