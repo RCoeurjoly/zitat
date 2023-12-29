@@ -10,6 +10,7 @@ readme = "README.md"
 python = "^3.11"
 pyhamcrest = "^2.1.0"
 orgparse = "^0.4.20231004"
+behave = {git = "https://github.com/behave/behave", rev = "v1.2.7.dev5"}
 
 
 [build-system]
