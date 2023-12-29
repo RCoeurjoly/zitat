@@ -15,20 +15,20 @@
       let
         # see https://github.com/nix-community/poetry2nix/tree/master#api for more functions and examples.
         pkgs = nixpkgs.legacyPackages.${system};
-        inherit (poetry2nix.lib.mkPoetry2Nix { inherit pkgs; }) mkPoetryApplication;
+        inherit (poetry2nix.lib.mkPoetry2Nix { inherit pkgs; }) mkPoetryApplication defaultPoetryOverrides;
       in
-      {
-        packages = {
-          myapp = mkPoetryApplication {
-            projectDir = self;
-            # overrides = poetry2nix.lib.defaultPoetryOverrides;
+        {
+          packages = {
+            myapp = mkPoetryApplication {
+              projectDir = self;
+              overrides = defaultPoetryOverrides;
+            };
+            default = self.packages.${system}.myapp;
           };
-          default = self.packages.${system}.myapp;
-        };
 
-        devShells.default = pkgs.mkShell {
-          inputsFrom = [ self.packages.${system}.myapp ];
-          packages = [ pkgs.poetry ];
-        };
-      });
+          devShells.default = pkgs.mkShell {
+            inputsFrom = [ self.packages.${system}.myapp ];
+            packages = [ pkgs.poetry ];
+          };
+        });
 }
