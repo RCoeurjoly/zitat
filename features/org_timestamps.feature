@@ -346,9 +346,9 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Friday, November 15, 2019 6:38:09 PM     | [2019-11-15 18:38:09] |
       | Added on Friday, November 15, 2019 6:38:53 PM     | [2019-11-15 18:38:53] |
       | Added on Friday, November 15, 2019 6:48:07 PM     | [2019-11-15 18:48:07] |
-      | Added on Saturday, November 16, 2019 2:11:54 AM   | [2019-11-16 2:11:54]  |
-      | Added on Saturday, November 16, 2019 2:13:11 AM   | [2019-11-16 2:13:11]  |
-      | Added on Saturday, November 16, 2019 2:14:34 AM   | [2019-11-16 2:14:34]  |
+      | Added on Saturday, November 16, 2019 2:11:54 AM   | [2019-11-16 02:11:54]  |
+      | Added on Saturday, November 16, 2019 2:13:11 AM   | [2019-11-16 02:13:11]  |
+      | Added on Saturday, November 16, 2019 2:14:34 AM   | [2019-11-16 02:14:34]  |
       | Added on Saturday, November 16, 2019 11:46:22 PM  | [2019-11-16 23:46:22] |
       | Added on Saturday, November 16, 2019 11:57:35 PM  | [2019-11-16 23:57:35] |
       | Added on Saturday, November 16, 2019 11:59:39 PM  | [2019-11-16 23:59:39] |
