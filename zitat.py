@@ -109,7 +109,7 @@ def calculate_ISO_8601_time(unadjusted_time, period):
         adjusted_hour = unadjusted_hour + 12
     else:
         adjusted_hour = unadjusted_hour
-    return str(adjusted_hour) + ":" + minutes_and_seconds
+    return ("0" + str(adjusted_hour) if adjusted_hour < 10 else str(adjusted_hour)) + ":" + minutes_and_seconds
 
 
 def EN_kindle_timestamp_to_ISO_8601(EN_kindle_timestamp):
