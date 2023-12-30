@@ -427,8 +427,8 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Tuesday, December 3, 2019 9:56:21 AM     | [2019-12-03 9:56:21]  |
       | Added on Tuesday, December 3, 2019 10:02:38 AM    | [2019-12-03 10:02:38] |
       | Added on Tuesday, December 3, 2019 10:03:03 AM    | [2019-12-03 10:03:03] |
-      | Added on Sunday, December 8, 2019 1:32:11 AM      | [2019-12-08 1:32:11]  |
-      | Added on Sunday, December 8, 2019 1:34:09 AM      | [2019-12-08 1:34:09]  |
+      | Added on Sunday, December 8, 2019 1:32:11 AM      | [2019-12-08 01:32:11]  |
+      | Added on Sunday, December 8, 2019 1:34:09 AM      | [2019-12-08 01:34:09]  |
       | Added on Tuesday, December 10, 2019 9:58:41 AM    | [2019-12-10 9:58:41]  |
       | Added on Tuesday, December 10, 2019 9:59:48 AM    | [2019-12-10 9:59:48]  |
       | Added on Tuesday, December 10, 2019 10:00:27 AM   | [2019-12-10 10:00:27] |
@@ -1299,14 +1299,14 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Friday, November 8, 2019 12:43:16 AM     | [2019-11-08 12:43:16] |
       | Added on Friday, November 8, 2019 12:44:33 AM     | [2019-11-08 12:44:33] |
       | Added on Friday, November 8, 2019 12:45:40 AM     | [2019-11-08 12:45:40] |
-      | Added on Friday, November 8, 2019 1:01:16 AM      | [2019-11-08 1:01:16]  |
-      | Added on Friday, November 8, 2019 1:04:03 AM      | [2019-11-08 1:04:03]  |
-      | Added on Friday, November 8, 2019 1:06:56 AM      | [2019-11-08 1:06:56]  |
-      | Added on Friday, November 8, 2019 1:07:56 AM      | [2019-11-08 1:07:56]  |
-      | Added on Friday, November 8, 2019 1:09:31 AM      | [2019-11-08 1:09:31]  |
-      | Added on Friday, November 8, 2019 1:12:13 AM      | [2019-11-08 1:12:13]  |
-      | Added on Friday, November 8, 2019 1:12:56 AM      | [2019-11-08 1:12:56]  |
-      | Added on Friday, November 8, 2019 1:17:10 AM      | [2019-11-08 1:17:10]  |
+      | Added on Friday, November 8, 2019 1:01:16 AM      | [2019-11-08 01:01:16]  |
+      | Added on Friday, November 8, 2019 1:04:03 AM      | [2019-11-08 01:04:03]  |
+      | Added on Friday, November 8, 2019 1:06:56 AM      | [2019-11-08 01:06:56]  |
+      | Added on Friday, November 8, 2019 1:07:56 AM      | [2019-11-08 01:07:56]  |
+      | Added on Friday, November 8, 2019 1:09:31 AM      | [2019-11-08 01:09:31]  |
+      | Added on Friday, November 8, 2019 1:12:13 AM      | [2019-11-08 01:12:13]  |
+      | Added on Friday, November 8, 2019 1:12:56 AM      | [2019-11-08 01:12:56]  |
+      | Added on Friday, November 8, 2019 1:17:10 AM      | [2019-11-08 01:17:10]  |
       | Added on Friday, November 8, 2019 9:34:51 AM      | [2019-11-08 9:34:51]  |
       | Added on Friday, November 8, 2019 9:35:49 AM      | [2019-11-08 9:35:49]  |
       | Added on Friday, November 8, 2019 9:39:56 AM      | [2019-11-08 9:39:56]  |
@@ -1515,8 +1515,8 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年2月3日星期日 上午12:37:16   | [2019-02-03 12:37:16] |
       | 添加于 2019年2月3日星期日 上午12:38:44   | [2019-02-03 12:38:44] |
       | 添加于 2019年2月3日星期日 上午12:38:54   | [2019-02-03 12:38:54] |
-      | 添加于 2019年2月3日星期日 上午1:44:16    | [2019-02-03 1:44:16]  |
-      | 添加于 2019年2月3日星期日 上午1:44:51    | [2019-02-03 1:44:51]  |
+      | 添加于 2019年2月3日星期日 上午1:44:16    | [2019-02-03 01:44:16]  |
+      | 添加于 2019年2月3日星期日 上午1:44:51    | [2019-02-03 01:44:51]  |
       | 添加于 2019年2月3日星期日 下午3:15:35    | [2019-02-03 15:15:35] |
       | 添加于 2019年2月3日星期日 下午3:18:40    | [2019-02-03 15:18:40] |
       | 添加于 2019年2月3日星期日 下午3:20:24    | [2019-02-03 15:20:24] |
