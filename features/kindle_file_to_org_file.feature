@@ -73,7 +73,7 @@ Feature: kindle generated clippings files are converted to org mode files
       ** Cosmos
       *** If you wish to make an apple pie from scratch, you must --
       If you wish to make an apple pie from scratch, you must first invent the universe.
-      /Highlight on Location 3617-3618. [2019-09-02 8:09:26]./
+      /Highlight on Location 3617-3618. [2019-09-02 08:09:26]./
       * Van Doren, Charles;Mortimer J. Adler
       ** How to Read a Book (A Touchstone book)
       *** A college degree ought to represent general competence in --

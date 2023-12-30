@@ -17,23 +17,23 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Friday, September 13, 2019 8:59:34 PM    | [2019-09-13 20:59:34] |
       | Added on Thursday, November 28, 2019 11:47:12 PM  | [2019-11-28 23:47:12] |
       | Added on Thursday, November 28, 2019 11:48:18 PM  | [2019-11-28 23:48:18] |
-      | Added on Friday, November 29, 2019 9:33:53 AM     | [2019-11-29 9:33:53]  |
-      | Added on Friday, November 29, 2019 9:34:05 AM     | [2019-11-29 9:34:05]  |
-      | Added on Friday, November 29, 2019 9:34:11 AM     | [2019-11-29 9:34:11]  |
-      | Added on Friday, November 29, 2019 9:36:23 AM     | [2019-11-29 9:36:23]  |
-      | Added on Friday, November 29, 2019 9:57:03 AM     | [2019-11-29 9:57:03]  |
+      | Added on Friday, November 29, 2019 9:33:53 AM     | [2019-11-29 09:33:53]  |
+      | Added on Friday, November 29, 2019 9:34:05 AM     | [2019-11-29 09:34:05]  |
+      | Added on Friday, November 29, 2019 9:34:11 AM     | [2019-11-29 09:34:11]  |
+      | Added on Friday, November 29, 2019 9:36:23 AM     | [2019-11-29 09:36:23]  |
+      | Added on Friday, November 29, 2019 9:57:03 AM     | [2019-11-29 09:57:03]  |
       | Added on Friday, November 29, 2019 10:04:30 AM    | [2019-11-29 10:04:30] |
       | Added on Friday, November 29, 2019 10:04:48 AM    | [2019-11-29 10:04:48] |
       | Added on Friday, November 29, 2019 10:07:44 AM    | [2019-11-29 10:07:44] |
       | Added on Friday, November 29, 2019 10:11:11 AM    | [2019-11-29 10:11:11] |
       | Added on Friday, November 29, 2019 5:23:36 PM     | [2019-11-29 17:23:36] |
       | Added on Friday, November 29, 2019 5:27:25 PM     | [2019-11-29 17:27:25] |
-      | Added on Thursday, December 5, 2019 9:39:33 AM    | [2019-12-05 9:39:33]  |
-      | Added on Thursday, December 5, 2019 9:41:23 AM    | [2019-12-05 9:41:23]  |
-      | Added on Thursday, December 5, 2019 9:41:47 AM    | [2019-12-05 9:41:47]  |
-      | Added on Thursday, December 5, 2019 9:42:02 AM    | [2019-12-05 9:42:02]  |
-      | Added on Thursday, December 5, 2019 9:43:04 AM    | [2019-12-05 9:43:04]  |
-      | Added on Thursday, December 5, 2019 9:44:32 AM    | [2019-12-05 9:44:32]  |
+      | Added on Thursday, December 5, 2019 9:39:33 AM    | [2019-12-05 09:39:33]  |
+      | Added on Thursday, December 5, 2019 9:41:23 AM    | [2019-12-05 09:41:23]  |
+      | Added on Thursday, December 5, 2019 9:41:47 AM    | [2019-12-05 09:41:47]  |
+      | Added on Thursday, December 5, 2019 9:42:02 AM    | [2019-12-05 09:42:02]  |
+      | Added on Thursday, December 5, 2019 9:43:04 AM    | [2019-12-05 09:43:04]  |
+      | Added on Thursday, December 5, 2019 9:44:32 AM    | [2019-12-05 09:44:32]  |
       | Added on Thursday, December 5, 2019 6:52:29 PM    | [2019-12-05 18:52:29] |
       | Added on Thursday, December 5, 2019 6:52:51 PM    | [2019-12-05 18:52:51] |
       | Added on Thursday, December 5, 2019 6:53:29 PM    | [2019-12-05 18:53:29] |
@@ -50,7 +50,7 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Monday, December 9, 2019 11:17:39 PM     | [2019-12-09 23:17:39] |
       | Added on Monday, December 9, 2019 11:44:24 PM     | [2019-12-09 23:44:24] |
       | Added on Monday, December 9, 2019 11:45:44 PM     | [2019-12-09 23:45:44] |
-      | Added on Tuesday, December 10, 2019 9:32:51 AM    | [2019-12-10 9:32:51]  |
+      | Added on Tuesday, December 10, 2019 9:32:51 AM    | [2019-12-10 09:32:51]  |
       | Added on Sunday, March 12, 2017 12:38:47 PM       | [2017-03-12 12:38:47] |
       | Added on Monday, March 13, 2017 5:25:58 PM        | [2017-03-13 17:25:58] |
       | Added on Monday, March 13, 2017 8:57:47 PM        | [2017-03-13 20:57:47] |
@@ -65,11 +65,11 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Tuesday, November 5, 2019 7:06:12 PM     | [2019-11-05 19:06:12] |
       | Added on Tuesday, November 5, 2019 7:06:34 PM     | [2019-11-05 19:06:34] |
       | Added on Tuesday, November 5, 2019 7:07:02 PM     | [2019-11-05 19:07:02] |
-      | Added on Wednesday, November 6, 2019 9:22:46 AM   | [2019-11-06 9:22:46]  |
-      | Added on Wednesday, November 6, 2019 9:23:07 AM   | [2019-11-06 9:23:07]  |
-      | Added on Wednesday, November 6, 2019 9:42:40 AM   | [2019-11-06 9:42:40]  |
-      | Added on Wednesday, November 6, 2019 9:46:11 AM   | [2019-11-06 9:46:11]  |
-      | Added on Wednesday, November 6, 2019 9:59:12 AM   | [2019-11-06 9:59:12]  |
+      | Added on Wednesday, November 6, 2019 9:22:46 AM   | [2019-11-06 09:22:46]  |
+      | Added on Wednesday, November 6, 2019 9:23:07 AM   | [2019-11-06 09:23:07]  |
+      | Added on Wednesday, November 6, 2019 9:42:40 AM   | [2019-11-06 09:42:40]  |
+      | Added on Wednesday, November 6, 2019 9:46:11 AM   | [2019-11-06 09:46:11]  |
+      | Added on Wednesday, November 6, 2019 9:59:12 AM   | [2019-11-06 09:59:12]  |
       | Added on Wednesday, November 6, 2019 10:11:58 AM  | [2019-11-06 10:11:58] |
       | Added on Wednesday, November 6, 2019 10:12:05 AM  | [2019-11-06 10:12:05] |
       | Added on Wednesday, November 6, 2019 10:12:15 AM  | [2019-11-06 10:12:15] |
@@ -110,7 +110,7 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Wednesday, November 20, 2019 8:28:54 PM  | [2019-11-20 20:28:54] |
       | Added on Wednesday, November 20, 2019 8:29:53 PM  | [2019-11-20 20:29:53] |
       | Added on Wednesday, November 20, 2019 8:30:44 PM  | [2019-11-20 20:30:44] |
-      | Added on Friday, November 22, 2019 9:54:34 AM     | [2019-11-22 9:54:34]  |
+      | Added on Friday, November 22, 2019 9:54:34 AM     | [2019-11-22 09:54:34]  |
       | Added on Friday, November 22, 2019 10:00:38 AM    | [2019-11-22 10:00:38] |
       | Added on Friday, November 22, 2019 6:23:11 PM     | [2019-11-22 18:23:11] |
       | Added on Friday, March 24, 2017 4:44:55 PM        | [2017-03-24 16:44:55] |
@@ -202,11 +202,11 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Saturday, August 31, 2019 4:51:29 PM     | [2019-08-31 16:51:29] |
       | Added on Saturday, August 31, 2019 4:51:49 PM     | [2019-08-31 16:51:49] |
       | Added on Saturday, August 31, 2019 4:56:58 PM     | [2019-08-31 16:56:58] |
-      | Added on Monday, September 2, 2019 8:08:19 AM     | [2019-09-02 8:08:19]  |
-      | Added on Monday, September 2, 2019 8:09:26 AM     | [2019-09-02 8:09:26]  |
-      | Added on Monday, September 2, 2019 8:13:16 AM     | [2019-09-02 8:13:16]  |
-      | Added on Monday, September 2, 2019 8:30:59 AM     | [2019-09-02 8:30:59]  |
-      | Added on Monday, September 2, 2019 8:36:41 AM     | [2019-09-02 8:36:41]  |
+      | Added on Monday, September 2, 2019 8:08:19 AM     | [2019-09-02 08:08:19]  |
+      | Added on Monday, September 2, 2019 8:09:26 AM     | [2019-09-02 08:09:26]  |
+      | Added on Monday, September 2, 2019 8:13:16 AM     | [2019-09-02 08:13:16]  |
+      | Added on Monday, September 2, 2019 8:30:59 AM     | [2019-09-02 08:30:59]  |
+      | Added on Monday, September 2, 2019 8:36:41 AM     | [2019-09-02 08:36:41]  |
       | Added on Monday, September 2, 2019 7:03:34 PM     | [2019-09-02 19:03:34] |
       | Added on Monday, September 2, 2019 7:09:57 PM     | [2019-09-02 19:09:57] |
       | Added on Monday, September 2, 2019 7:11:46 PM     | [2019-09-02 19:11:46] |
@@ -231,16 +231,16 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Thursday, September 5, 2019 10:50:47 PM  | [2019-09-05 22:50:47] |
       | Added on Thursday, September 5, 2019 10:51:10 PM  | [2019-09-05 22:51:10] |
       | Added on Thursday, September 5, 2019 11:02:09 PM  | [2019-09-05 23:02:09] |
-      | Added on Friday, September 6, 2019 8:27:55 AM     | [2019-09-06 8:27:55]  |
-      | Added on Friday, September 6, 2019 8:47:16 AM     | [2019-09-06 8:47:16]  |
-      | Added on Friday, September 6, 2019 8:47:58 AM     | [2019-09-06 8:47:58]  |
-      | Added on Friday, September 6, 2019 8:49:27 AM     | [2019-09-06 8:49:27]  |
-      | Added on Friday, September 6, 2019 8:49:44 AM     | [2019-09-06 8:49:44]  |
-      | Added on Friday, September 6, 2019 8:52:10 AM     | [2019-09-06 8:52:10]  |
-      | Added on Friday, September 6, 2019 8:53:16 AM     | [2019-09-06 8:53:16]  |
-      | Added on Friday, September 6, 2019 8:53:29 AM     | [2019-09-06 8:53:29]  |
-      | Added on Friday, September 6, 2019 8:54:58 AM     | [2019-09-06 8:54:58]  |
-      | Added on Friday, September 6, 2019 8:55:18 AM     | [2019-09-06 8:55:18]  |
+      | Added on Friday, September 6, 2019 8:27:55 AM     | [2019-09-06 08:27:55]  |
+      | Added on Friday, September 6, 2019 8:47:16 AM     | [2019-09-06 08:47:16]  |
+      | Added on Friday, September 6, 2019 8:47:58 AM     | [2019-09-06 08:47:58]  |
+      | Added on Friday, September 6, 2019 8:49:27 AM     | [2019-09-06 08:49:27]  |
+      | Added on Friday, September 6, 2019 8:49:44 AM     | [2019-09-06 08:49:44]  |
+      | Added on Friday, September 6, 2019 8:52:10 AM     | [2019-09-06 08:52:10]  |
+      | Added on Friday, September 6, 2019 8:53:16 AM     | [2019-09-06 08:53:16]  |
+      | Added on Friday, September 6, 2019 8:53:29 AM     | [2019-09-06 08:53:29]  |
+      | Added on Friday, September 6, 2019 8:54:58 AM     | [2019-09-06 08:54:58]  |
+      | Added on Friday, September 6, 2019 8:55:18 AM     | [2019-09-06 08:55:18]  |
       | Added on Sunday, September 8, 2019 6:18:54 PM     | [2019-09-08 18:18:54] |
       | Added on Sunday, September 8, 2019 6:19:57 PM     | [2019-09-08 18:19:57] |
       | Added on Sunday, September 8, 2019 6:21:44 PM     | [2019-09-08 18:21:44] |
@@ -261,7 +261,7 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Monday, September 9, 2019 9:29:20 PM     | [2019-09-09 21:29:20] |
       | Added on Monday, September 9, 2019 9:35:06 PM     | [2019-09-09 21:35:06] |
       | Added on Monday, September 9, 2019 9:35:33 PM     | [2019-09-09 21:35:33] |
-      | Added on Tuesday, September 10, 2019 9:30:57 AM   | [2019-09-10 9:30:57]  |
+      | Added on Tuesday, September 10, 2019 9:30:57 AM   | [2019-09-10 09:30:57]  |
       | Added on Tuesday, September 10, 2019 5:53:51 PM   | [2019-09-10 17:53:51] |
       | Added on Tuesday, September 10, 2019 6:24:42 PM   | [2019-09-10 18:24:42] |
       | Added on Tuesday, September 10, 2019 6:33:15 PM   | [2019-09-10 18:33:15] |
@@ -272,14 +272,14 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Tuesday, September 10, 2019 9:25:04 PM   | [2019-09-10 21:25:04] |
       | Added on Tuesday, September 10, 2019 10:38:56 PM  | [2019-09-10 22:38:56] |
       | Added on Tuesday, September 10, 2019 10:39:29 PM  | [2019-09-10 22:39:29] |
-      | Added on Wednesday, September 11, 2019 9:00:42 AM | [2019-09-11 9:00:42]  |
-      | Added on Wednesday, September 11, 2019 9:01:09 AM | [2019-09-11 9:01:09]  |
-      | Added on Wednesday, September 11, 2019 9:02:17 AM | [2019-09-11 9:02:17]  |
-      | Added on Wednesday, September 11, 2019 9:02:49 AM | [2019-09-11 9:02:49]  |
-      | Added on Wednesday, September 11, 2019 9:03:25 AM | [2019-09-11 9:03:25]  |
-      | Added on Wednesday, September 11, 2019 9:03:45 AM | [2019-09-11 9:03:45]  |
-      | Added on Wednesday, September 11, 2019 9:04:16 AM | [2019-09-11 9:04:16]  |
-      | Added on Wednesday, September 11, 2019 9:04:29 AM | [2019-09-11 9:04:29]  |
+      | Added on Wednesday, September 11, 2019 9:00:42 AM | [2019-09-11 09:00:42]  |
+      | Added on Wednesday, September 11, 2019 9:01:09 AM | [2019-09-11 09:01:09]  |
+      | Added on Wednesday, September 11, 2019 9:02:17 AM | [2019-09-11 09:02:17]  |
+      | Added on Wednesday, September 11, 2019 9:02:49 AM | [2019-09-11 09:02:49]  |
+      | Added on Wednesday, September 11, 2019 9:03:25 AM | [2019-09-11 09:03:25]  |
+      | Added on Wednesday, September 11, 2019 9:03:45 AM | [2019-09-11 09:03:45]  |
+      | Added on Wednesday, September 11, 2019 9:04:16 AM | [2019-09-11 09:04:16]  |
+      | Added on Wednesday, September 11, 2019 9:04:29 AM | [2019-09-11 09:04:29]  |
       | Added on Tuesday, February 21, 2017 10:14:46 AM   | [2017-02-21 10:14:46] |
       | Added on Tuesday, February 21, 2017 10:15:09 AM   | [2017-02-21 10:15:09] |
       | Added on Tuesday, February 21, 2017 10:15:41 AM   | [2017-02-21 10:15:41] |
@@ -292,13 +292,13 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Tuesday, February 21, 2017 10:20:08 AM   | [2017-02-21 10:20:08] |
       | Added on Tuesday, February 21, 2017 10:20:31 AM   | [2017-02-21 10:20:31] |
       | Added on Tuesday, February 21, 2017 5:49:28 PM    | [2017-02-21 17:49:28] |
-      | Added on Wednesday, February 22, 2017 7:29:10 AM  | [2017-02-22 7:29:10]  |
+      | Added on Wednesday, February 22, 2017 7:29:10 AM  | [2017-02-22 07:29:10]  |
       | Added on Monday, January 2, 2017 6:23:34 PM       | [2017-01-02 18:23:34] |
-      | Added on Thursday, November 14, 2019 9:28:59 AM   | [2019-11-14 9:28:59]  |
-      | Added on Thursday, November 14, 2019 9:46:55 AM   | [2019-11-14 9:46:55]  |
-      | Added on Thursday, November 14, 2019 9:48:34 AM   | [2019-11-14 9:48:34]  |
-      | Added on Thursday, November 14, 2019 9:57:51 AM   | [2019-11-14 9:57:51]  |
-      | Added on Thursday, November 14, 2019 9:58:01 AM   | [2019-11-14 9:58:01]  |
+      | Added on Thursday, November 14, 2019 9:28:59 AM   | [2019-11-14 09:28:59]  |
+      | Added on Thursday, November 14, 2019 9:46:55 AM   | [2019-11-14 09:46:55]  |
+      | Added on Thursday, November 14, 2019 9:48:34 AM   | [2019-11-14 09:48:34]  |
+      | Added on Thursday, November 14, 2019 9:57:51 AM   | [2019-11-14 09:57:51]  |
+      | Added on Thursday, November 14, 2019 9:58:01 AM   | [2019-11-14 09:58:01]  |
       | Added on Thursday, November 14, 2019 10:00:10 AM  | [2019-11-14 10:00:10] |
       | Added on Thursday, November 14, 2019 10:01:29 AM  | [2019-11-14 10:01:29] |
       | Added on Thursday, November 14, 2019 10:03:36 AM  | [2019-11-14 10:03:36] |
@@ -321,13 +321,13 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Friday, November 15, 2019 12:42:31 AM    | [2019-11-15 12:42:31] |
       | Added on Friday, November 15, 2019 12:42:58 AM    | [2019-11-15 12:42:58] |
       | Added on Friday, November 15, 2019 12:49:23 AM    | [2019-11-15 12:49:23] |
-      | Added on Friday, November 15, 2019 9:33:47 AM     | [2019-11-15 9:33:47]  |
-      | Added on Friday, November 15, 2019 9:35:57 AM     | [2019-11-15 9:35:57]  |
-      | Added on Friday, November 15, 2019 9:39:16 AM     | [2019-11-15 9:39:16]  |
-      | Added on Friday, November 15, 2019 9:41:17 AM     | [2019-11-15 9:41:17]  |
-      | Added on Friday, November 15, 2019 9:42:51 AM     | [2019-11-15 9:42:51]  |
-      | Added on Friday, November 15, 2019 9:56:17 AM     | [2019-11-15 9:56:17]  |
-      | Added on Friday, November 15, 2019 9:58:23 AM     | [2019-11-15 9:58:23]  |
+      | Added on Friday, November 15, 2019 9:33:47 AM     | [2019-11-15 09:33:47]  |
+      | Added on Friday, November 15, 2019 9:35:57 AM     | [2019-11-15 09:35:57]  |
+      | Added on Friday, November 15, 2019 9:39:16 AM     | [2019-11-15 09:39:16]  |
+      | Added on Friday, November 15, 2019 9:41:17 AM     | [2019-11-15 09:41:17]  |
+      | Added on Friday, November 15, 2019 9:42:51 AM     | [2019-11-15 09:42:51]  |
+      | Added on Friday, November 15, 2019 9:56:17 AM     | [2019-11-15 09:56:17]  |
+      | Added on Friday, November 15, 2019 9:58:23 AM     | [2019-11-15 09:58:23]  |
       | Added on Friday, November 15, 2019 10:01:02 AM    | [2019-11-15 10:01:02] |
       | Added on Friday, November 15, 2019 10:02:43 AM    | [2019-11-15 10:02:43] |
       | Added on Friday, November 15, 2019 10:05:08 AM    | [2019-11-15 10:05:08] |
@@ -369,11 +369,11 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Sunday, November 17, 2019 11:54:18 AM    | [2019-11-17 11:54:18] |
       | Added on Sunday, November 17, 2019 11:54:20 AM    | [2019-11-17 11:54:20] |
       | Added on Sunday, November 17, 2019 11:54:25 AM    | [2019-11-17 11:54:25] |
-      | Added on Monday, November 18, 2019 9:31:14 AM     | [2019-11-18 9:31:14]  |
-      | Added on Monday, November 18, 2019 9:32:06 AM     | [2019-11-18 9:32:06]  |
-      | Added on Monday, November 18, 2019 9:33:32 AM     | [2019-11-18 9:33:32]  |
-      | Added on Monday, November 18, 2019 9:47:44 AM     | [2019-11-18 9:47:44]  |
-      | Added on Monday, November 18, 2019 9:56:14 AM     | [2019-11-18 9:56:14]  |
+      | Added on Monday, November 18, 2019 9:31:14 AM     | [2019-11-18 09:31:14]  |
+      | Added on Monday, November 18, 2019 9:32:06 AM     | [2019-11-18 09:32:06]  |
+      | Added on Monday, November 18, 2019 9:33:32 AM     | [2019-11-18 09:33:32]  |
+      | Added on Monday, November 18, 2019 9:47:44 AM     | [2019-11-18 09:47:44]  |
+      | Added on Monday, November 18, 2019 9:56:14 AM     | [2019-11-18 09:56:14]  |
       | Added on Monday, November 18, 2019 10:17:00 AM    | [2019-11-18 10:17:00] |
       | Added on Monday, November 18, 2019 10:20:17 AM    | [2019-11-18 10:20:17] |
       | Added on Monday, November 18, 2019 10:25:53 AM    | [2019-11-18 10:25:53] |
@@ -395,8 +395,8 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Monday, November 18, 2019 7:33:53 PM     | [2019-11-18 19:33:53] |
       | Added on Monday, November 18, 2019 7:34:28 PM     | [2019-11-18 19:34:28] |
       | Added on Monday, November 18, 2019 7:36:21 PM     | [2019-11-18 19:36:21] |
-      | Added on Tuesday, November 19, 2019 9:36:17 AM    | [2019-11-19 9:36:17]  |
-      | Added on Tuesday, November 19, 2019 9:59:48 AM    | [2019-11-19 9:59:48]  |
+      | Added on Tuesday, November 19, 2019 9:36:17 AM    | [2019-11-19 09:36:17]  |
+      | Added on Tuesday, November 19, 2019 9:59:48 AM    | [2019-11-19 09:59:48]  |
       | Added on Tuesday, November 19, 2019 10:08:23 AM   | [2019-11-19 10:08:23] |
       | Added on Tuesday, November 19, 2019 10:10:07 AM   | [2019-11-19 10:10:07] |
       | Added on Tuesday, November 19, 2019 6:41:55 PM    | [2019-11-19 18:41:55] |
@@ -406,7 +406,7 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Wednesday, November 20, 2019 8:19:37 PM  | [2019-11-20 20:19:37] |
       | Added on Wednesday, November 20, 2019 8:20:31 PM  | [2019-11-20 20:20:31] |
       | Added on Wednesday, November 20, 2019 8:20:36 PM  | [2019-11-20 20:20:36] |
-      | Added on Tuesday, November 26, 2019 9:31:01 AM    | [2019-11-26 9:31:01]  |
+      | Added on Tuesday, November 26, 2019 9:31:01 AM    | [2019-11-26 09:31:01]  |
       | Added on Thursday, November 28, 2019 10:07:28 AM  | [2019-11-28 10:07:28] |
       | Added on Thursday, November 28, 2019 10:09:07 AM  | [2019-11-28 10:09:07] |
       | Added on Thursday, November 28, 2019 10:10:11 AM  | [2019-11-28 10:10:11] |
@@ -422,15 +422,15 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Thursday, November 28, 2019 7:02:20 PM   | [2019-11-28 19:02:20] |
       | Added on Thursday, November 28, 2019 7:09:27 PM   | [2019-11-28 19:09:27] |
       | Added on Monday, December 2, 2019 8:31:38 PM      | [2019-12-02 20:31:38] |
-      | Added on Tuesday, December 3, 2019 9:32:30 AM     | [2019-12-03 9:32:30]  |
-      | Added on Tuesday, December 3, 2019 9:55:26 AM     | [2019-12-03 9:55:26]  |
-      | Added on Tuesday, December 3, 2019 9:56:21 AM     | [2019-12-03 9:56:21]  |
+      | Added on Tuesday, December 3, 2019 9:32:30 AM     | [2019-12-03 09:32:30]  |
+      | Added on Tuesday, December 3, 2019 9:55:26 AM     | [2019-12-03 09:55:26]  |
+      | Added on Tuesday, December 3, 2019 9:56:21 AM     | [2019-12-03 09:56:21]  |
       | Added on Tuesday, December 3, 2019 10:02:38 AM    | [2019-12-03 10:02:38] |
       | Added on Tuesday, December 3, 2019 10:03:03 AM    | [2019-12-03 10:03:03] |
       | Added on Sunday, December 8, 2019 1:32:11 AM      | [2019-12-08 01:32:11]  |
       | Added on Sunday, December 8, 2019 1:34:09 AM      | [2019-12-08 01:34:09]  |
-      | Added on Tuesday, December 10, 2019 9:58:41 AM    | [2019-12-10 9:58:41]  |
-      | Added on Tuesday, December 10, 2019 9:59:48 AM    | [2019-12-10 9:59:48]  |
+      | Added on Tuesday, December 10, 2019 9:58:41 AM    | [2019-12-10 09:58:41]  |
+      | Added on Tuesday, December 10, 2019 9:59:48 AM    | [2019-12-10 09:59:48]  |
       | Added on Tuesday, December 10, 2019 10:00:27 AM   | [2019-12-10 10:00:27] |
       | Added on Wednesday, September 11, 2019 6:05:11 PM | [2019-09-11 18:05:11] |
       | Added on Wednesday, September 11, 2019 6:05:28 PM | [2019-09-11 18:05:28] |
@@ -449,10 +449,10 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Wednesday, September 11, 2019 6:23:15 PM | [2019-09-11 18:23:15] |
       | Added on Wednesday, September 11, 2019 6:38:23 PM | [2019-09-11 18:38:23] |
       | Added on Wednesday, September 11, 2019 6:38:42 PM | [2019-09-11 18:38:42] |
-      | Added on Thursday, September 12, 2019 9:03:48 AM  | [2019-09-12 9:03:48]  |
+      | Added on Thursday, September 12, 2019 9:03:48 AM  | [2019-09-12 09:03:48]  |
       | Added on Saturday, June 10, 2017 10:25:21 AM      | [2017-06-10 10:25:21] |
       | Added on Sunday, June 11, 2017 9:41:22 PM         | [2017-06-11 21:41:22] |
-      | Added on Monday, June 12, 2017 8:04:39 AM         | [2017-06-12 8:04:39]  |
+      | Added on Monday, June 12, 2017 8:04:39 AM         | [2017-06-12 08:04:39]  |
       | Added on Saturday, September 7, 2019 4:03:49 PM   | [2019-09-07 16:03:49] |
       | Added on Saturday, September 7, 2019 4:36:40 PM   | [2019-09-07 16:36:40] |
       | Added on Saturday, September 7, 2019 4:36:51 PM   | [2019-09-07 16:36:51] |
@@ -531,19 +531,19 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Saturday, December 28, 2019 8:37:12 PM   | [2019-12-28 20:37:12] |
       | Added on Saturday, December 28, 2019 8:39:48 PM   | [2019-12-28 20:39:48] |
       | Added on Sunday, December 29, 2019 12:35:44 AM    | [2019-12-29 12:35:44] |
-      | Added on Wednesday, October 16, 2019 8:39:46 AM   | [2019-10-16 8:39:46]  |
-      | Added on Wednesday, October 16, 2019 8:40:02 AM   | [2019-10-16 8:40:02]  |
-      | Added on Wednesday, October 16, 2019 8:40:14 AM   | [2019-10-16 8:40:14]  |
-      | Added on Wednesday, October 16, 2019 8:44:19 AM   | [2019-10-16 8:44:19]  |
-      | Added on Wednesday, October 16, 2019 8:46:04 AM   | [2019-10-16 8:46:04]  |
-      | Added on Wednesday, October 16, 2019 8:48:08 AM   | [2019-10-16 8:48:08]  |
-      | Added on Wednesday, October 16, 2019 8:49:50 AM   | [2019-10-16 8:49:50]  |
-      | Added on Wednesday, October 16, 2019 8:49:54 AM   | [2019-10-16 8:49:54]  |
-      | Added on Wednesday, October 16, 2019 9:16:17 AM   | [2019-10-16 9:16:17]  |
-      | Added on Wednesday, October 16, 2019 9:18:55 AM   | [2019-10-16 9:18:55]  |
-      | Added on Wednesday, October 16, 2019 9:19:45 AM   | [2019-10-16 9:19:45]  |
-      | Added on Wednesday, October 16, 2019 9:19:49 AM   | [2019-10-16 9:19:49]  |
-      | Added on Wednesday, October 16, 2019 9:20:40 AM   | [2019-10-16 9:20:40]  |
+      | Added on Wednesday, October 16, 2019 8:39:46 AM   | [2019-10-16 08:39:46]  |
+      | Added on Wednesday, October 16, 2019 8:40:02 AM   | [2019-10-16 08:40:02]  |
+      | Added on Wednesday, October 16, 2019 8:40:14 AM   | [2019-10-16 08:40:14]  |
+      | Added on Wednesday, October 16, 2019 8:44:19 AM   | [2019-10-16 08:44:19]  |
+      | Added on Wednesday, October 16, 2019 8:46:04 AM   | [2019-10-16 08:46:04]  |
+      | Added on Wednesday, October 16, 2019 8:48:08 AM   | [2019-10-16 08:48:08]  |
+      | Added on Wednesday, October 16, 2019 8:49:50 AM   | [2019-10-16 08:49:50]  |
+      | Added on Wednesday, October 16, 2019 8:49:54 AM   | [2019-10-16 08:49:54]  |
+      | Added on Wednesday, October 16, 2019 9:16:17 AM   | [2019-10-16 09:16:17]  |
+      | Added on Wednesday, October 16, 2019 9:18:55 AM   | [2019-10-16 09:18:55]  |
+      | Added on Wednesday, October 16, 2019 9:19:45 AM   | [2019-10-16 09:19:45]  |
+      | Added on Wednesday, October 16, 2019 9:19:49 AM   | [2019-10-16 09:19:49]  |
+      | Added on Wednesday, October 16, 2019 9:20:40 AM   | [2019-10-16 09:20:40]  |
       | Added on Wednesday, October 16, 2019 5:50:35 PM   | [2019-10-16 17:50:35] |
       | Added on Wednesday, October 16, 2019 5:57:09 PM   | [2019-10-16 17:57:09] |
       | Added on Wednesday, October 16, 2019 6:03:37 PM   | [2019-10-16 18:03:37] |
@@ -557,16 +557,16 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Wednesday, October 16, 2019 6:27:33 PM   | [2019-10-16 18:27:33] |
       | Added on Wednesday, October 16, 2019 10:04:01 PM  | [2019-10-16 22:04:01] |
       | Added on Wednesday, October 16, 2019 10:04:02 PM  | [2019-10-16 22:04:02] |
-      | Added on Thursday, October 17, 2019 8:35:37 AM    | [2019-10-17 8:35:37]  |
-      | Added on Monday, October 21, 2019 8:43:14 AM      | [2019-10-21 8:43:14]  |
-      | Added on Monday, October 21, 2019 8:44:09 AM      | [2019-10-21 8:44:09]  |
-      | Added on Monday, October 21, 2019 8:46:57 AM      | [2019-10-21 8:46:57]  |
-      | Added on Wednesday, October 23, 2019 8:34:10 AM   | [2019-10-23 8:34:10]  |
-      | Added on Wednesday, October 23, 2019 8:34:39 AM   | [2019-10-23 8:34:39]  |
-      | Added on Wednesday, October 23, 2019 8:44:32 AM   | [2019-10-23 8:44:32]  |
-      | Added on Wednesday, October 23, 2019 8:44:41 AM   | [2019-10-23 8:44:41]  |
-      | Added on Wednesday, October 23, 2019 8:47:57 AM   | [2019-10-23 8:47:57]  |
-      | Added on Wednesday, October 23, 2019 8:51:38 AM   | [2019-10-23 8:51:38]  |
+      | Added on Thursday, October 17, 2019 8:35:37 AM    | [2019-10-17 08:35:37]  |
+      | Added on Monday, October 21, 2019 8:43:14 AM      | [2019-10-21 08:43:14]  |
+      | Added on Monday, October 21, 2019 8:44:09 AM      | [2019-10-21 08:44:09]  |
+      | Added on Monday, October 21, 2019 8:46:57 AM      | [2019-10-21 08:46:57]  |
+      | Added on Wednesday, October 23, 2019 8:34:10 AM   | [2019-10-23 08:34:10]  |
+      | Added on Wednesday, October 23, 2019 8:34:39 AM   | [2019-10-23 08:34:39]  |
+      | Added on Wednesday, October 23, 2019 8:44:32 AM   | [2019-10-23 08:44:32]  |
+      | Added on Wednesday, October 23, 2019 8:44:41 AM   | [2019-10-23 08:44:41]  |
+      | Added on Wednesday, October 23, 2019 8:47:57 AM   | [2019-10-23 08:47:57]  |
+      | Added on Wednesday, October 23, 2019 8:51:38 AM   | [2019-10-23 08:51:38]  |
       | Added on Thursday, October 24, 2019 6:37:52 PM    | [2019-10-24 18:37:52] |
       | Added on Thursday, October 24, 2019 6:43:51 PM    | [2019-10-24 18:43:51] |
       | Added on Thursday, October 24, 2019 6:53:30 PM    | [2019-10-24 18:53:30] |
@@ -613,9 +613,9 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Sunday, January 1, 2017 1:56:14 PM       | [2017-01-01 13:56:14] |
       | Added on Tuesday, March 7, 2017 9:32:38 PM        | [2017-03-07 21:32:38] |
       | Added on Friday, March 3, 2017 8:17:02 PM         | [2017-03-03 20:17:02] |
-      | Added on Friday, December 20, 2019 9:20:03 AM     | [2019-12-20 9:20:03]  |
-      | Added on Friday, December 20, 2019 9:20:07 AM     | [2019-12-20 9:20:07]  |
-      | Added on Friday, December 20, 2019 9:20:35 AM     | [2019-12-20 9:20:35]  |
+      | Added on Friday, December 20, 2019 9:20:03 AM     | [2019-12-20 09:20:03]  |
+      | Added on Friday, December 20, 2019 9:20:07 AM     | [2019-12-20 09:20:07]  |
+      | Added on Friday, December 20, 2019 9:20:35 AM     | [2019-12-20 09:20:35]  |
       | Added on Friday, December 20, 2019 7:00:11 PM     | [2019-12-20 19:00:11] |
       | Added on Friday, December 20, 2019 7:06:13 PM     | [2019-12-20 19:06:13] |
       | Added on Friday, December 20, 2019 7:11:49 PM     | [2019-12-20 19:11:49] |
@@ -631,26 +631,26 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Monday, December 23, 2019 12:05:22 AM    | [2019-12-23 12:05:22] |
       | Added on Monday, December 23, 2019 12:12:32 AM    | [2019-12-23 12:12:32] |
       | Added on Monday, December 23, 2019 12:18:41 AM    | [2019-12-23 12:18:41] |
-      | Added on Monday, December 23, 2019 8:30:25 AM     | [2019-12-23 8:30:25]  |
-      | Added on Monday, December 23, 2019 8:47:50 AM     | [2019-12-23 8:47:50]  |
-      | Added on Monday, December 23, 2019 8:48:47 AM     | [2019-12-23 8:48:47]  |
-      | Added on Monday, December 23, 2019 8:51:36 AM     | [2019-12-23 8:51:36]  |
+      | Added on Monday, December 23, 2019 8:30:25 AM     | [2019-12-23 08:30:25]  |
+      | Added on Monday, December 23, 2019 8:47:50 AM     | [2019-12-23 08:47:50]  |
+      | Added on Monday, December 23, 2019 8:48:47 AM     | [2019-12-23 08:48:47]  |
+      | Added on Monday, December 23, 2019 8:51:36 AM     | [2019-12-23 08:51:36]  |
       | Added on Monday, December 23, 2019 5:55:40 PM     | [2019-12-23 17:55:40] |
       | Added on Monday, December 23, 2019 5:59:09 PM     | [2019-12-23 17:59:09] |
       | Added on Monday, December 23, 2019 6:00:08 PM     | [2019-12-23 18:00:08] |
-      | Added on Thursday, February 23, 2017 7:48:18 AM   | [2017-02-23 7:48:18]  |
-      | Added on Thursday, February 23, 2017 7:48:49 AM   | [2017-02-23 7:48:49]  |
-      | Added on Thursday, February 23, 2017 7:50:12 AM   | [2017-02-23 7:50:12]  |
+      | Added on Thursday, February 23, 2017 7:48:18 AM   | [2017-02-23 07:48:18]  |
+      | Added on Thursday, February 23, 2017 7:48:49 AM   | [2017-02-23 07:48:49]  |
+      | Added on Thursday, February 23, 2017 7:50:12 AM   | [2017-02-23 07:50:12]  |
       | Added on Saturday, May 20, 2017 12:55:24 AM       | [2017-05-20 12:55:24] |
-      | Added on Friday, October 4, 2019 8:47:55 AM       | [2019-10-04 8:47:55]  |
-      | Added on Friday, October 4, 2019 8:48:14 AM       | [2019-10-04 8:48:14]  |
-      | Added on Friday, October 4, 2019 8:50:36 AM       | [2019-10-04 8:50:36]  |
-      | Added on Friday, October 4, 2019 8:50:55 AM       | [2019-10-04 8:50:55]  |
-      | Added on Friday, October 4, 2019 8:54:03 AM       | [2019-10-04 8:54:03]  |
-      | Added on Friday, October 4, 2019 8:54:09 AM       | [2019-10-04 8:54:09]  |
-      | Added on Friday, October 4, 2019 9:07:06 AM       | [2019-10-04 9:07:06]  |
-      | Added on Friday, October 4, 2019 9:16:51 AM       | [2019-10-04 9:16:51]  |
-      | Added on Friday, October 4, 2019 9:17:07 AM       | [2019-10-04 9:17:07]  |
+      | Added on Friday, October 4, 2019 8:47:55 AM       | [2019-10-04 08:47:55]  |
+      | Added on Friday, October 4, 2019 8:48:14 AM       | [2019-10-04 08:48:14]  |
+      | Added on Friday, October 4, 2019 8:50:36 AM       | [2019-10-04 08:50:36]  |
+      | Added on Friday, October 4, 2019 8:50:55 AM       | [2019-10-04 08:50:55]  |
+      | Added on Friday, October 4, 2019 8:54:03 AM       | [2019-10-04 08:54:03]  |
+      | Added on Friday, October 4, 2019 8:54:09 AM       | [2019-10-04 08:54:09]  |
+      | Added on Friday, October 4, 2019 9:07:06 AM       | [2019-10-04 09:07:06]  |
+      | Added on Friday, October 4, 2019 9:16:51 AM       | [2019-10-04 09:16:51]  |
+      | Added on Friday, October 4, 2019 9:17:07 AM       | [2019-10-04 09:17:07]  |
       | Added on Saturday, October 5, 2019 7:45:13 PM     | [2019-10-05 19:45:13] |
       | Added on Saturday, February 25, 2017 12:24:42 PM  | [2017-02-25 12:24:42] |
       | Added on Saturday, February 25, 2017 12:25:39 PM  | [2017-02-25 12:25:39] |
@@ -661,9 +661,9 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Friday, September 13, 2019 5:07:34 PM    | [2019-09-13 17:07:34] |
       | Added on Friday, September 13, 2019 5:08:09 PM    | [2019-09-13 17:08:09] |
       | Added on Friday, September 13, 2019 5:08:48 PM    | [2019-09-13 17:08:48] |
-      | Added on Wednesday, January 25, 2017 7:56:33 AM   | [2017-01-25 7:56:33]  |
-      | Added on Wednesday, January 25, 2017 8:05:44 AM   | [2017-01-25 8:05:44]  |
-      | Added on Wednesday, January 25, 2017 8:07:57 AM   | [2017-01-25 8:07:57]  |
+      | Added on Wednesday, January 25, 2017 7:56:33 AM   | [2017-01-25 07:56:33]  |
+      | Added on Wednesday, January 25, 2017 8:05:44 AM   | [2017-01-25 08:05:44]  |
+      | Added on Wednesday, January 25, 2017 8:07:57 AM   | [2017-01-25 08:07:57]  |
       | Added on Wednesday, January 25, 2017 10:09:46 AM  | [2017-01-25 10:09:46] |
       | Added on Wednesday, January 25, 2017 10:12:56 AM  | [2017-01-25 10:12:56] |
       | Added on Wednesday, January 25, 2017 10:13:04 AM  | [2017-01-25 10:13:04] |
@@ -676,9 +676,9 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Wednesday, January 25, 2017 6:05:33 PM   | [2017-01-25 18:05:33] |
       | Added on Wednesday, January 25, 2017 6:21:36 PM   | [2017-01-25 18:21:36] |
       | Added on Wednesday, January 25, 2017 6:22:32 PM   | [2017-01-25 18:22:32] |
-      | Added on Thursday, January 26, 2017 7:59:39 AM    | [2017-01-26 7:59:39]  |
-      | Added on Thursday, January 26, 2017 7:59:53 AM    | [2017-01-26 7:59:53]  |
-      | Added on Thursday, January 26, 2017 8:03:28 AM    | [2017-01-26 8:03:28]  |
+      | Added on Thursday, January 26, 2017 7:59:39 AM    | [2017-01-26 07:59:39]  |
+      | Added on Thursday, January 26, 2017 7:59:53 AM    | [2017-01-26 07:59:53]  |
+      | Added on Thursday, January 26, 2017 8:03:28 AM    | [2017-01-26 08:03:28]  |
       | Added on Thursday, January 26, 2017 10:05:29 AM   | [2017-01-26 10:05:29] |
       | Added on Thursday, January 26, 2017 10:13:54 AM   | [2017-01-26 10:13:54] |
       | Added on Thursday, January 26, 2017 5:51:41 PM    | [2017-01-26 17:51:41] |
@@ -698,22 +698,22 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Thursday, January 26, 2017 6:16:46 PM    | [2017-01-26 18:16:46] |
       | Added on Thursday, January 26, 2017 10:52:35 PM   | [2017-01-26 22:52:35] |
       | Added on Thursday, January 26, 2017 11:11:02 PM   | [2017-01-26 23:11:02] |
-      | Added on Friday, January 27, 2017 7:59:08 AM      | [2017-01-27 7:59:08]  |
-      | Added on Friday, January 27, 2017 7:59:38 AM      | [2017-01-27 7:59:38]  |
-      | Added on Friday, January 27, 2017 8:19:09 AM      | [2017-01-27 8:19:09]  |
-      | Added on Friday, January 27, 2017 8:19:43 AM      | [2017-01-27 8:19:43]  |
+      | Added on Friday, January 27, 2017 7:59:08 AM      | [2017-01-27 07:59:08]  |
+      | Added on Friday, January 27, 2017 7:59:38 AM      | [2017-01-27 07:59:38]  |
+      | Added on Friday, January 27, 2017 8:19:09 AM      | [2017-01-27 08:19:09]  |
+      | Added on Friday, January 27, 2017 8:19:43 AM      | [2017-01-27 08:19:43]  |
       | Added on Friday, January 27, 2017 10:12:40 AM     | [2017-01-27 10:12:40] |
       | Added on Friday, January 27, 2017 10:12:46 AM     | [2017-01-27 10:12:46] |
       | Added on Friday, January 27, 2017 10:13:09 AM     | [2017-01-27 10:13:09] |
       | Added on Friday, January 27, 2017 10:16:59 AM     | [2017-01-27 10:16:59] |
       | Added on Sunday, September 15, 2019 11:13:11 PM   | [2019-09-15 23:13:11] |
       | Added on Sunday, September 15, 2019 11:14:01 PM   | [2019-09-15 23:14:01] |
-      | Added on Tuesday, September 17, 2019 8:58:32 AM   | [2019-09-17 8:58:32]  |
-      | Added on Tuesday, September 17, 2019 9:16:58 AM   | [2019-09-17 9:16:58]  |
-      | Added on Tuesday, September 17, 2019 9:19:13 AM   | [2019-09-17 9:19:13]  |
-      | Added on Tuesday, September 17, 2019 9:21:57 AM   | [2019-09-17 9:21:57]  |
-      | Added on Tuesday, September 17, 2019 9:23:19 AM   | [2019-09-17 9:23:19]  |
-      | Added on Tuesday, September 17, 2019 9:23:22 AM   | [2019-09-17 9:23:22]  |
+      | Added on Tuesday, September 17, 2019 8:58:32 AM   | [2019-09-17 08:58:32]  |
+      | Added on Tuesday, September 17, 2019 9:16:58 AM   | [2019-09-17 09:16:58]  |
+      | Added on Tuesday, September 17, 2019 9:19:13 AM   | [2019-09-17 09:19:13]  |
+      | Added on Tuesday, September 17, 2019 9:21:57 AM   | [2019-09-17 09:21:57]  |
+      | Added on Tuesday, September 17, 2019 9:23:19 AM   | [2019-09-17 09:23:19]  |
+      | Added on Tuesday, September 17, 2019 9:23:22 AM   | [2019-09-17 09:23:22]  |
       | Added on Saturday, September 21, 2019 5:52:12 PM  | [2019-09-21 17:52:12] |
       | Added on Saturday, June 29, 2019 6:53:06 PM       | [2019-06-29 18:53:06] |
       | Added on Sunday, June 30, 2019 6:22:04 PM         | [2019-06-30 18:22:04] |
@@ -737,9 +737,9 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Saturday, January 28, 2017 4:04:58 PM    | [2017-01-28 16:04:58] |
       | Added on Saturday, January 28, 2017 4:25:06 PM    | [2017-01-28 16:25:06] |
       | Added on Saturday, January 28, 2017 4:26:24 PM    | [2017-01-28 16:26:24] |
-      | Added on Monday, September 9, 2019 8:34:32 AM     | [2019-09-09 8:34:32]  |
-      | Added on Monday, September 9, 2019 8:34:47 AM     | [2019-09-09 8:34:47]  |
-      | Added on Monday, September 9, 2019 8:50:08 AM     | [2019-09-09 8:50:08]  |
+      | Added on Monday, September 9, 2019 8:34:32 AM     | [2019-09-09 08:34:32]  |
+      | Added on Monday, September 9, 2019 8:34:47 AM     | [2019-09-09 08:34:47]  |
+      | Added on Monday, September 9, 2019 8:50:08 AM     | [2019-09-09 08:50:08]  |
       | Added on Wednesday, April 26, 2017 10:19:16 AM    | [2017-04-26 10:19:16] |
       | Added on Wednesday, April 26, 2017 10:20:09 AM    | [2017-04-26 10:20:09] |
       | Added on Wednesday, April 26, 2017 10:20:29 AM    | [2017-04-26 10:20:29] |
@@ -771,15 +771,15 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Sunday, December 9, 2018 8:30:37 PM      | [2018-12-09 20:30:37] |
       | Added on Saturday, April 15, 2017 5:32:26 PM      | [2017-04-15 17:32:26] |
       | Added on Sunday, March 26, 2017 10:48:23 PM       | [2017-03-26 22:48:23] |
-      | Added on Tuesday, September 3, 2019 8:45:06 AM    | [2019-09-03 8:45:06]  |
-      | Added on Tuesday, September 3, 2019 8:47:19 AM    | [2019-09-03 8:47:19]  |
-      | Added on Tuesday, September 3, 2019 8:48:55 AM    | [2019-09-03 8:48:55]  |
-      | Added on Tuesday, September 3, 2019 9:01:11 AM    | [2019-09-03 9:01:11]  |
-      | Added on Tuesday, September 3, 2019 9:01:20 AM    | [2019-09-03 9:01:20]  |
-      | Added on Tuesday, September 3, 2019 9:02:10 AM    | [2019-09-03 9:02:10]  |
-      | Added on Tuesday, September 3, 2019 9:03:26 AM    | [2019-09-03 9:03:26]  |
-      | Added on Tuesday, September 3, 2019 9:12:26 AM    | [2019-09-03 9:12:26]  |
-      | Added on Tuesday, September 3, 2019 9:12:31 AM    | [2019-09-03 9:12:31]  |
+      | Added on Tuesday, September 3, 2019 8:45:06 AM    | [2019-09-03 08:45:06]  |
+      | Added on Tuesday, September 3, 2019 8:47:19 AM    | [2019-09-03 08:47:19]  |
+      | Added on Tuesday, September 3, 2019 8:48:55 AM    | [2019-09-03 08:48:55]  |
+      | Added on Tuesday, September 3, 2019 9:01:11 AM    | [2019-09-03 09:01:11]  |
+      | Added on Tuesday, September 3, 2019 9:01:20 AM    | [2019-09-03 09:01:20]  |
+      | Added on Tuesday, September 3, 2019 9:02:10 AM    | [2019-09-03 09:02:10]  |
+      | Added on Tuesday, September 3, 2019 9:03:26 AM    | [2019-09-03 09:03:26]  |
+      | Added on Tuesday, September 3, 2019 9:12:26 AM    | [2019-09-03 09:12:26]  |
+      | Added on Tuesday, September 3, 2019 9:12:31 AM    | [2019-09-03 09:12:31]  |
       | Added on Tuesday, September 3, 2019 1:35:03 PM    | [2019-09-03 13:35:03] |
       | Added on Tuesday, September 3, 2019 1:44:37 PM    | [2019-09-03 13:44:37] |
       | Added on Tuesday, September 3, 2019 1:47:49 PM    | [2019-09-03 13:47:49] |
@@ -793,30 +793,30 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Tuesday, September 3, 2019 6:04:03 PM    | [2019-09-03 18:04:03] |
       | Added on Tuesday, September 3, 2019 6:04:14 PM    | [2019-09-03 18:04:14] |
       | Added on Tuesday, September 3, 2019 9:16:16 PM    | [2019-09-03 21:16:16] |
-      | Added on Wednesday, September 4, 2019 8:21:49 AM  | [2019-09-04 8:21:49]  |
-      | Added on Wednesday, September 4, 2019 8:31:27 AM  | [2019-09-04 8:31:27]  |
-      | Added on Wednesday, September 4, 2019 8:32:43 AM  | [2019-09-04 8:32:43]  |
-      | Added on Wednesday, September 4, 2019 8:32:49 AM  | [2019-09-04 8:32:49]  |
-      | Added on Wednesday, September 4, 2019 8:33:09 AM  | [2019-09-04 8:33:09]  |
-      | Added on Wednesday, September 4, 2019 8:37:18 AM  | [2019-09-04 8:37:18]  |
-      | Added on Wednesday, September 4, 2019 8:37:52 AM  | [2019-09-04 8:37:52]  |
-      | Added on Wednesday, September 4, 2019 8:38:19 AM  | [2019-09-04 8:38:19]  |
-      | Added on Wednesday, September 4, 2019 8:39:07 AM  | [2019-09-04 8:39:07]  |
-      | Added on Wednesday, September 4, 2019 8:39:12 AM  | [2019-09-04 8:39:12]  |
-      | Added on Wednesday, September 4, 2019 8:39:30 AM  | [2019-09-04 8:39:30]  |
-      | Added on Wednesday, September 4, 2019 8:40:56 AM  | [2019-09-04 8:40:56]  |
+      | Added on Wednesday, September 4, 2019 8:21:49 AM  | [2019-09-04 08:21:49]  |
+      | Added on Wednesday, September 4, 2019 8:31:27 AM  | [2019-09-04 08:31:27]  |
+      | Added on Wednesday, September 4, 2019 8:32:43 AM  | [2019-09-04 08:32:43]  |
+      | Added on Wednesday, September 4, 2019 8:32:49 AM  | [2019-09-04 08:32:49]  |
+      | Added on Wednesday, September 4, 2019 8:33:09 AM  | [2019-09-04 08:33:09]  |
+      | Added on Wednesday, September 4, 2019 8:37:18 AM  | [2019-09-04 08:37:18]  |
+      | Added on Wednesday, September 4, 2019 8:37:52 AM  | [2019-09-04 08:37:52]  |
+      | Added on Wednesday, September 4, 2019 8:38:19 AM  | [2019-09-04 08:38:19]  |
+      | Added on Wednesday, September 4, 2019 8:39:07 AM  | [2019-09-04 08:39:07]  |
+      | Added on Wednesday, September 4, 2019 8:39:12 AM  | [2019-09-04 08:39:12]  |
+      | Added on Wednesday, September 4, 2019 8:39:30 AM  | [2019-09-04 08:39:30]  |
+      | Added on Wednesday, September 4, 2019 8:40:56 AM  | [2019-09-04 08:40:56]  |
       | Added on Wednesday, September 4, 2019 6:06:37 PM  | [2019-09-04 18:06:37] |
       | Added on Wednesday, September 4, 2019 6:17:06 PM  | [2019-09-04 18:17:06] |
       | Added on Wednesday, September 4, 2019 6:20:54 PM  | [2019-09-04 18:20:54] |
       | Added on Wednesday, September 4, 2019 6:21:35 PM  | [2019-09-04 18:21:35] |
       | Added on Wednesday, September 4, 2019 8:13:30 PM  | [2019-09-04 20:13:30] |
-      | Added on Thursday, September 5, 2019 8:41:14 AM   | [2019-09-05 8:41:14]  |
-      | Added on Thursday, September 5, 2019 8:41:24 AM   | [2019-09-05 8:41:24]  |
-      | Added on Thursday, September 5, 2019 8:41:31 AM   | [2019-09-05 8:41:31]  |
-      | Added on Thursday, September 5, 2019 8:46:03 AM   | [2019-09-05 8:46:03]  |
-      | Added on Thursday, September 5, 2019 8:46:26 AM   | [2019-09-05 8:46:26]  |
-      | Added on Thursday, September 5, 2019 8:49:43 AM   | [2019-09-05 8:49:43]  |
-      | Added on Thursday, September 5, 2019 8:51:29 AM   | [2019-09-05 8:51:29]  |
+      | Added on Thursday, September 5, 2019 8:41:14 AM   | [2019-09-05 08:41:14]  |
+      | Added on Thursday, September 5, 2019 8:41:24 AM   | [2019-09-05 08:41:24]  |
+      | Added on Thursday, September 5, 2019 8:41:31 AM   | [2019-09-05 08:41:31]  |
+      | Added on Thursday, September 5, 2019 8:46:03 AM   | [2019-09-05 08:46:03]  |
+      | Added on Thursday, September 5, 2019 8:46:26 AM   | [2019-09-05 08:46:26]  |
+      | Added on Thursday, September 5, 2019 8:49:43 AM   | [2019-09-05 08:49:43]  |
+      | Added on Thursday, September 5, 2019 8:51:29 AM   | [2019-09-05 08:51:29]  |
       | Added on Monday, September 23, 2019 5:49:07 PM    | [2019-09-23 17:49:07] |
       | Added on Monday, September 23, 2019 5:56:23 PM    | [2019-09-23 17:56:23] |
       | Added on Monday, September 23, 2019 6:11:13 PM    | [2019-09-23 18:11:13] |
@@ -845,22 +845,22 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Monday, September 23, 2019 9:16:44 PM    | [2019-09-23 21:16:44] |
       | Added on Monday, September 23, 2019 9:19:05 PM    | [2019-09-23 21:19:05] |
       | Added on Tuesday, September 24, 2019 1:59:50 PM   | [2019-09-24 13:59:50] |
-      | Added on Wednesday, September 25, 2019 8:59:20 AM | [2019-09-25 8:59:20]  |
-      | Added on Wednesday, September 25, 2019 8:59:55 AM | [2019-09-25 8:59:55]  |
-      | Added on Wednesday, September 25, 2019 9:04:04 AM | [2019-09-25 9:04:04]  |
-      | Added on Wednesday, September 25, 2019 9:06:41 AM | [2019-09-25 9:06:41]  |
-      | Added on Wednesday, September 25, 2019 9:16:10 AM | [2019-09-25 9:16:10]  |
-      | Added on Wednesday, September 25, 2019 9:16:17 AM | [2019-09-25 9:16:17]  |
-      | Added on Wednesday, September 25, 2019 9:16:28 AM | [2019-09-25 9:16:28]  |
-      | Added on Wednesday, September 25, 2019 9:16:34 AM | [2019-09-25 9:16:34]  |
-      | Added on Wednesday, September 25, 2019 9:16:51 AM | [2019-09-25 9:16:51]  |
-      | Added on Wednesday, September 25, 2019 9:16:55 AM | [2019-09-25 9:16:55]  |
-      | Added on Wednesday, September 25, 2019 9:21:51 AM | [2019-09-25 9:21:51]  |
-      | Added on Wednesday, September 25, 2019 9:21:57 AM | [2019-09-25 9:21:57]  |
-      | Added on Wednesday, September 25, 2019 9:22:09 AM | [2019-09-25 9:22:09]  |
-      | Added on Wednesday, September 25, 2019 9:22:20 AM | [2019-09-25 9:22:20]  |
-      | Added on Wednesday, September 25, 2019 9:22:38 AM | [2019-09-25 9:22:38]  |
-      | Added on Wednesday, September 25, 2019 9:23:26 AM | [2019-09-25 9:23:26]  |
+      | Added on Wednesday, September 25, 2019 8:59:20 AM | [2019-09-25 08:59:20]  |
+      | Added on Wednesday, September 25, 2019 8:59:55 AM | [2019-09-25 08:59:55]  |
+      | Added on Wednesday, September 25, 2019 9:04:04 AM | [2019-09-25 09:04:04]  |
+      | Added on Wednesday, September 25, 2019 9:06:41 AM | [2019-09-25 09:06:41]  |
+      | Added on Wednesday, September 25, 2019 9:16:10 AM | [2019-09-25 09:16:10]  |
+      | Added on Wednesday, September 25, 2019 9:16:17 AM | [2019-09-25 09:16:17]  |
+      | Added on Wednesday, September 25, 2019 9:16:28 AM | [2019-09-25 09:16:28]  |
+      | Added on Wednesday, September 25, 2019 9:16:34 AM | [2019-09-25 09:16:34]  |
+      | Added on Wednesday, September 25, 2019 9:16:51 AM | [2019-09-25 09:16:51]  |
+      | Added on Wednesday, September 25, 2019 9:16:55 AM | [2019-09-25 09:16:55]  |
+      | Added on Wednesday, September 25, 2019 9:21:51 AM | [2019-09-25 09:21:51]  |
+      | Added on Wednesday, September 25, 2019 9:21:57 AM | [2019-09-25 09:21:57]  |
+      | Added on Wednesday, September 25, 2019 9:22:09 AM | [2019-09-25 09:22:09]  |
+      | Added on Wednesday, September 25, 2019 9:22:20 AM | [2019-09-25 09:22:20]  |
+      | Added on Wednesday, September 25, 2019 9:22:38 AM | [2019-09-25 09:22:38]  |
+      | Added on Wednesday, September 25, 2019 9:23:26 AM | [2019-09-25 09:23:26]  |
       | Added on Wednesday, September 25, 2019 6:00:33 PM | [2019-09-25 18:00:33] |
       | Added on Wednesday, September 25, 2019 6:01:29 PM | [2019-09-25 18:01:29] |
       | Added on Wednesday, September 25, 2019 6:06:30 PM | [2019-09-25 18:06:30] |
@@ -944,33 +944,33 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Thursday, October 3, 2019 6:16:55 PM     | [2019-10-03 18:16:55] |
       | Added on Thursday, October 3, 2019 6:25:10 PM     | [2019-10-03 18:25:10] |
       | Added on Sunday, October 6, 2019 9:42:31 PM       | [2019-10-06 21:42:31] |
-      | Added on Tuesday, October 8, 2019 9:20:36 AM      | [2019-10-08 9:20:36]  |
-      | Added on Tuesday, October 8, 2019 9:23:24 AM      | [2019-10-08 9:23:24]  |
-      | Added on Wednesday, October 9, 2019 9:12:53 AM    | [2019-10-09 9:12:53]  |
-      | Added on Wednesday, October 9, 2019 9:13:02 AM    | [2019-10-09 9:13:02]  |
-      | Added on Wednesday, October 9, 2019 9:13:09 AM    | [2019-10-09 9:13:09]  |
-      | Added on Wednesday, October 9, 2019 9:15:48 AM    | [2019-10-09 9:15:48]  |
-      | Added on Wednesday, October 9, 2019 9:16:13 AM    | [2019-10-09 9:16:13]  |
-      | Added on Wednesday, October 9, 2019 9:19:17 AM    | [2019-10-09 9:19:17]  |
-      | Added on Wednesday, October 9, 2019 9:24:36 AM    | [2019-10-09 9:24:36]  |
-      | Added on Wednesday, October 9, 2019 9:24:57 AM    | [2019-10-09 9:24:57]  |
-      | Added on Wednesday, October 9, 2019 9:34:04 AM    | [2019-10-09 9:34:04]  |
+      | Added on Tuesday, October 8, 2019 9:20:36 AM      | [2019-10-08 09:20:36]  |
+      | Added on Tuesday, October 8, 2019 9:23:24 AM      | [2019-10-08 09:23:24]  |
+      | Added on Wednesday, October 9, 2019 9:12:53 AM    | [2019-10-09 09:12:53]  |
+      | Added on Wednesday, October 9, 2019 9:13:02 AM    | [2019-10-09 09:13:02]  |
+      | Added on Wednesday, October 9, 2019 9:13:09 AM    | [2019-10-09 09:13:09]  |
+      | Added on Wednesday, October 9, 2019 9:15:48 AM    | [2019-10-09 09:15:48]  |
+      | Added on Wednesday, October 9, 2019 9:16:13 AM    | [2019-10-09 09:16:13]  |
+      | Added on Wednesday, October 9, 2019 9:19:17 AM    | [2019-10-09 09:19:17]  |
+      | Added on Wednesday, October 9, 2019 9:24:36 AM    | [2019-10-09 09:24:36]  |
+      | Added on Wednesday, October 9, 2019 9:24:57 AM    | [2019-10-09 09:24:57]  |
+      | Added on Wednesday, October 9, 2019 9:34:04 AM    | [2019-10-09 09:34:04]  |
       | Added on Monday, October 28, 2019 6:49:55 PM      | [2019-10-28 18:49:55] |
       | Added on Monday, October 28, 2019 6:50:20 PM      | [2019-10-28 18:50:20] |
       | Added on Monday, October 28, 2019 6:52:22 PM      | [2019-10-28 18:52:22] |
       | Added on Monday, October 28, 2019 6:53:21 PM      | [2019-10-28 18:53:21] |
       | Added on Monday, October 28, 2019 6:54:29 PM      | [2019-10-28 18:54:29] |
       | Added on Monday, October 28, 2019 6:54:52 PM      | [2019-10-28 18:54:52] |
-      | Added on Tuesday, October 29, 2019 9:26:17 AM     | [2019-10-29 9:26:17]  |
-      | Added on Tuesday, October 29, 2019 9:26:27 AM     | [2019-10-29 9:26:27]  |
-      | Added on Tuesday, October 29, 2019 9:28:31 AM     | [2019-10-29 9:28:31]  |
-      | Added on Tuesday, October 29, 2019 9:33:10 AM     | [2019-10-29 9:33:10]  |
-      | Added on Tuesday, October 29, 2019 9:33:20 AM     | [2019-10-29 9:33:20]  |
-      | Added on Tuesday, October 29, 2019 9:34:26 AM     | [2019-10-29 9:34:26]  |
-      | Added on Tuesday, October 29, 2019 9:38:40 AM     | [2019-10-29 9:38:40]  |
-      | Added on Tuesday, October 29, 2019 9:43:35 AM     | [2019-10-29 9:43:35]  |
-      | Added on Tuesday, October 29, 2019 9:51:29 AM     | [2019-10-29 9:51:29]  |
-      | Added on Tuesday, October 29, 2019 9:55:58 AM     | [2019-10-29 9:55:58]  |
+      | Added on Tuesday, October 29, 2019 9:26:17 AM     | [2019-10-29 09:26:17]  |
+      | Added on Tuesday, October 29, 2019 9:26:27 AM     | [2019-10-29 09:26:27]  |
+      | Added on Tuesday, October 29, 2019 9:28:31 AM     | [2019-10-29 09:28:31]  |
+      | Added on Tuesday, October 29, 2019 9:33:10 AM     | [2019-10-29 09:33:10]  |
+      | Added on Tuesday, October 29, 2019 9:33:20 AM     | [2019-10-29 09:33:20]  |
+      | Added on Tuesday, October 29, 2019 9:34:26 AM     | [2019-10-29 09:34:26]  |
+      | Added on Tuesday, October 29, 2019 9:38:40 AM     | [2019-10-29 09:38:40]  |
+      | Added on Tuesday, October 29, 2019 9:43:35 AM     | [2019-10-29 09:43:35]  |
+      | Added on Tuesday, October 29, 2019 9:51:29 AM     | [2019-10-29 09:51:29]  |
+      | Added on Tuesday, October 29, 2019 9:55:58 AM     | [2019-10-29 09:55:58]  |
       | Added on Tuesday, October 29, 2019 10:04:26 AM    | [2019-10-29 10:04:26] |
       | Added on Tuesday, October 29, 2019 10:05:47 AM    | [2019-10-29 10:05:47] |
       | Added on Tuesday, October 29, 2019 10:13:17 AM    | [2019-10-29 10:13:17] |
@@ -1032,8 +1032,8 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Wednesday, January 4, 2017 9:12:01 PM    | [2017-01-04 21:12:01] |
       | Added on Wednesday, January 4, 2017 9:12:01 PM    | [2017-01-04 21:12:01] |
       | Added on Wednesday, January 4, 2017 9:14:47 PM    | [2017-01-04 21:14:47] |
-      | Added on Thursday, January 5, 2017 7:50:19 AM     | [2017-01-05 7:50:19]  |
-      | Added on Thursday, January 5, 2017 8:05:02 AM     | [2017-01-05 8:05:02]  |
+      | Added on Thursday, January 5, 2017 7:50:19 AM     | [2017-01-05 07:50:19]  |
+      | Added on Thursday, January 5, 2017 8:05:02 AM     | [2017-01-05 08:05:02]  |
       | Added on Thursday, January 5, 2017 3:15:35 PM     | [2017-01-05 15:15:35] |
       | Added on Thursday, January 5, 2017 3:28:28 PM     | [2017-01-05 15:28:28] |
       | Added on Thursday, January 5, 2017 3:28:39 PM     | [2017-01-05 15:28:39] |
@@ -1044,9 +1044,9 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Thursday, January 5, 2017 9:26:34 PM     | [2017-01-05 21:26:34] |
       | Added on Thursday, January 5, 2017 9:29:03 PM     | [2017-01-05 21:29:03] |
       | Added on Friday, January 6, 2017 12:14:59 PM      | [2017-01-06 12:14:59] |
-      | Added on Monday, January 9, 2017 7:48:04 AM       | [2017-01-09 7:48:04]  |
-      | Added on Tuesday, January 10, 2017 8:02:21 AM     | [2017-01-10 8:02:21]  |
-      | Added on Tuesday, January 10, 2017 8:02:43 AM     | [2017-01-10 8:02:43]  |
+      | Added on Monday, January 9, 2017 7:48:04 AM       | [2017-01-09 07:48:04]  |
+      | Added on Tuesday, January 10, 2017 8:02:21 AM     | [2017-01-10 08:02:21]  |
+      | Added on Tuesday, January 10, 2017 8:02:43 AM     | [2017-01-10 08:02:43]  |
       | Added on Tuesday, January 10, 2017 2:34:29 PM     | [2017-01-10 14:34:29] |
       | Added on Tuesday, January 10, 2017 2:34:42 PM     | [2017-01-10 14:34:42] |
       | Added on Tuesday, January 10, 2017 2:35:01 PM     | [2017-01-10 14:35:01] |
@@ -1057,11 +1057,11 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Wednesday, October 30, 2019 7:24:58 PM   | [2019-10-30 19:24:58] |
       | Added on Wednesday, October 30, 2019 7:25:14 PM   | [2019-10-30 19:25:14] |
       | Added on Wednesday, October 30, 2019 7:25:51 PM   | [2019-10-30 19:25:51] |
-      | Added on Thursday, October 31, 2019 9:26:27 AM    | [2019-10-31 9:26:27]  |
-      | Added on Thursday, October 31, 2019 9:35:13 AM    | [2019-10-31 9:35:13]  |
-      | Added on Thursday, October 31, 2019 9:35:17 AM    | [2019-10-31 9:35:17]  |
-      | Added on Thursday, October 31, 2019 9:37:11 AM    | [2019-10-31 9:37:11]  |
-      | Added on Thursday, October 31, 2019 9:38:28 AM    | [2019-10-31 9:38:28]  |
+      | Added on Thursday, October 31, 2019 9:26:27 AM    | [2019-10-31 09:26:27]  |
+      | Added on Thursday, October 31, 2019 9:35:13 AM    | [2019-10-31 09:35:13]  |
+      | Added on Thursday, October 31, 2019 9:35:17 AM    | [2019-10-31 09:35:17]  |
+      | Added on Thursday, October 31, 2019 9:37:11 AM    | [2019-10-31 09:37:11]  |
+      | Added on Thursday, October 31, 2019 9:38:28 AM    | [2019-10-31 09:38:28]  |
       | Added on Thursday, October 31, 2019 10:12:35 AM   | [2019-10-31 10:12:35] |
       | Added on Thursday, October 31, 2019 10:12:47 AM   | [2019-10-31 10:12:47] |
       | Added on Thursday, October 31, 2019 10:14:09 AM   | [2019-10-31 10:14:09] |
@@ -1081,9 +1081,9 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Saturday, December 14, 2019 7:25:00 PM   | [2019-12-14 19:25:00] |
       | Added on Saturday, December 14, 2019 8:16:32 PM   | [2019-12-14 20:16:32] |
       | Added on Sunday, December 15, 2019 10:40:38 PM    | [2019-12-15 22:40:38] |
-      | Added on Monday, December 16, 2019 8:52:08 AM     | [2019-12-16 8:52:08]  |
-      | Added on Monday, December 16, 2019 8:52:13 AM     | [2019-12-16 8:52:13]  |
-      | Added on Monday, December 16, 2019 9:01:18 AM     | [2019-12-16 9:01:18]  |
+      | Added on Monday, December 16, 2019 8:52:08 AM     | [2019-12-16 08:52:08]  |
+      | Added on Monday, December 16, 2019 8:52:13 AM     | [2019-12-16 08:52:13]  |
+      | Added on Monday, December 16, 2019 9:01:18 AM     | [2019-12-16 09:01:18]  |
       | Added on Tuesday, December 17, 2019 6:08:27 PM    | [2019-12-17 18:08:27] |
       | Added on Tuesday, December 17, 2019 8:31:16 PM    | [2019-12-17 20:31:16] |
       | Added on Tuesday, December 17, 2019 8:31:31 PM    | [2019-12-17 20:31:31] |
@@ -1091,7 +1091,7 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Tuesday, December 17, 2019 9:23:57 PM    | [2019-12-17 21:23:57] |
       | Added on Tuesday, December 17, 2019 11:32:53 PM   | [2019-12-17 23:32:53] |
       | Added on Tuesday, December 17, 2019 11:35:06 PM   | [2019-12-17 23:35:06] |
-      | Added on Wednesday, December 18, 2019 8:51:10 AM  | [2019-12-18 8:51:10]  |
+      | Added on Wednesday, December 18, 2019 8:51:10 AM  | [2019-12-18 08:51:10]  |
       | Added on Wednesday, December 18, 2019 5:44:00 PM  | [2019-12-18 17:44:00] |
       | Added on Wednesday, December 18, 2019 5:46:54 PM  | [2019-12-18 17:46:54] |
       | Added on Wednesday, December 18, 2019 5:47:53 PM  | [2019-12-18 17:47:53] |
@@ -1099,11 +1099,11 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Wednesday, December 18, 2019 5:52:39 PM  | [2019-12-18 17:52:39] |
       | Added on Wednesday, December 18, 2019 5:53:13 PM  | [2019-12-18 17:53:13] |
       | Added on Wednesday, December 18, 2019 6:55:10 PM  | [2019-12-18 18:55:10] |
-      | Added on Wednesday, August 28, 2019 5:26:48 AM    | [2019-08-28 5:26:48]  |
-      | Added on Wednesday, August 28, 2019 5:26:56 AM    | [2019-08-28 5:26:56]  |
-      | Added on Wednesday, August 28, 2019 5:29:48 AM    | [2019-08-28 5:29:48]  |
-      | Added on Wednesday, October 16, 2019 8:27:56 AM   | [2019-10-16 8:27:56]  |
-      | Added on Tuesday, January 31, 2017 7:59:16 AM     | [2017-01-31 7:59:16]  |
+      | Added on Wednesday, August 28, 2019 5:26:48 AM    | [2019-08-28 05:26:48]  |
+      | Added on Wednesday, August 28, 2019 5:26:56 AM    | [2019-08-28 05:26:56]  |
+      | Added on Wednesday, August 28, 2019 5:29:48 AM    | [2019-08-28 05:29:48]  |
+      | Added on Wednesday, October 16, 2019 8:27:56 AM   | [2019-10-16 08:27:56]  |
+      | Added on Tuesday, January 31, 2017 7:59:16 AM     | [2017-01-31 07:59:16]  |
       | Added on Tuesday, January 31, 2017 6:16:14 PM     | [2017-01-31 18:16:14] |
       | Added on Wednesday, February 1, 2017 2:26:24 PM   | [2017-02-01 14:26:24] |
       | Added on Wednesday, February 1, 2017 2:26:24 PM   | [2017-02-01 14:26:24] |
@@ -1124,9 +1124,9 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Sunday, August 25, 2019 6:00:47 PM       | [2019-08-25 18:00:47] |
       | Added on Sunday, August 25, 2019 6:38:37 PM       | [2019-08-25 18:38:37] |
       | Added on Sunday, August 25, 2019 7:02:49 PM       | [2019-08-25 19:02:49] |
-      | Added on Monday, August 26, 2019 5:29:32 AM       | [2019-08-26 5:29:32]  |
-      | Added on Tuesday, August 27, 2019 5:07:25 AM      | [2019-08-27 5:07:25]  |
-      | Added on Tuesday, August 27, 2019 9:51:08 AM      | [2019-08-27 9:51:08]  |
+      | Added on Monday, August 26, 2019 5:29:32 AM       | [2019-08-26 05:29:32]  |
+      | Added on Tuesday, August 27, 2019 5:07:25 AM      | [2019-08-27 05:07:25]  |
+      | Added on Tuesday, August 27, 2019 9:51:08 AM      | [2019-08-27 09:51:08]  |
       | Added on Tuesday, August 27, 2019 10:02:50 AM     | [2019-08-27 10:02:50] |
       | Added on Tuesday, August 27, 2019 11:24:08 AM     | [2019-08-27 11:24:08] |
       | Added on Tuesday, April 4, 2017 10:17:48 AM       | [2017-04-04 10:17:48] |
@@ -1141,7 +1141,7 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Thursday, September 12, 2019 5:45:06 PM  | [2019-09-12 17:45:06] |
       | Added on Thursday, September 12, 2019 5:45:10 PM  | [2019-09-12 17:45:10] |
       | Added on Thursday, September 12, 2019 5:48:38 PM  | [2019-09-12 17:48:38] |
-      | Added on Wednesday, November 6, 2019 9:40:22 AM   | [2019-11-06 9:40:22]  |
+      | Added on Wednesday, November 6, 2019 9:40:22 AM   | [2019-11-06 09:40:22]  |
       | Added on Tuesday, December 3, 2019 7:05:37 PM     | [2019-12-03 19:05:37] |
       | Added on Tuesday, December 3, 2019 7:06:37 PM     | [2019-12-03 19:06:37] |
       | Added on Sunday, December 8, 2019 9:35:21 PM      | [2019-12-08 21:35:21] |
@@ -1188,8 +1188,8 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Monday, February 13, 2017 5:09:34 PM     | [2017-02-13 17:09:34] |
       | Added on Tuesday, February 14, 2017 2:21:50 PM    | [2017-02-14 14:21:50] |
       | Added on Sunday, June 4, 2017 10:35:21 PM         | [2017-06-04 22:35:21] |
-      | Added on Monday, August 21, 2017 7:10:47 AM       | [2017-08-21 7:10:47]  |
-      | Added on Wednesday, August 23, 2017 5:14:52 AM    | [2017-08-23 5:14:52]  |
+      | Added on Monday, August 21, 2017 7:10:47 AM       | [2017-08-21 07:10:47]  |
+      | Added on Wednesday, August 23, 2017 5:14:52 AM    | [2017-08-23 05:14:52]  |
       | Added on Thursday, February 22, 2018 10:13:26 AM  | [2018-02-22 10:13:26] |
       | Added on Saturday, February 24, 2018 8:39:26 PM   | [2018-02-24 20:39:26] |
       | Added on Saturday, October 19, 2019 8:06:19 PM    | [2019-10-19 20:06:19] |
@@ -1210,23 +1210,23 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Wednesday, November 20, 2019 8:50:50 PM  | [2019-11-20 20:50:50] |
       | Added on Wednesday, November 20, 2019 8:54:47 PM  | [2019-11-20 20:54:47] |
       | Added on Wednesday, November 20, 2019 8:57:47 PM  | [2019-11-20 20:57:47] |
-      | Added on Thursday, November 21, 2019 9:25:52 AM   | [2019-11-21 9:25:52]  |
-      | Added on Thursday, November 21, 2019 9:25:59 AM   | [2019-11-21 9:25:59]  |
-      | Added on Thursday, November 21, 2019 9:26:19 AM   | [2019-11-21 9:26:19]  |
-      | Added on Thursday, November 21, 2019 9:27:30 AM   | [2019-11-21 9:27:30]  |
-      | Added on Thursday, November 21, 2019 9:32:23 AM   | [2019-11-21 9:32:23]  |
-      | Added on Thursday, November 21, 2019 9:32:42 AM   | [2019-11-21 9:32:42]  |
-      | Added on Thursday, November 21, 2019 9:35:02 AM   | [2019-11-21 9:35:02]  |
-      | Added on Thursday, November 21, 2019 9:35:25 AM   | [2019-11-21 9:35:25]  |
-      | Added on Thursday, November 21, 2019 9:35:57 AM   | [2019-11-21 9:35:57]  |
-      | Added on Thursday, November 21, 2019 9:36:54 AM   | [2019-11-21 9:36:54]  |
-      | Added on Thursday, November 21, 2019 9:39:34 AM   | [2019-11-21 9:39:34]  |
-      | Added on Thursday, November 21, 2019 9:40:30 AM   | [2019-11-21 9:40:30]  |
-      | Added on Thursday, November 21, 2019 9:40:58 AM   | [2019-11-21 9:40:58]  |
-      | Added on Thursday, November 21, 2019 9:46:57 AM   | [2019-11-21 9:46:57]  |
-      | Added on Thursday, November 21, 2019 9:48:14 AM   | [2019-11-21 9:48:14]  |
-      | Added on Thursday, November 21, 2019 9:57:36 AM   | [2019-11-21 9:57:36]  |
-      | Added on Thursday, November 21, 2019 9:58:36 AM   | [2019-11-21 9:58:36]  |
+      | Added on Thursday, November 21, 2019 9:25:52 AM   | [2019-11-21 09:25:52]  |
+      | Added on Thursday, November 21, 2019 9:25:59 AM   | [2019-11-21 09:25:59]  |
+      | Added on Thursday, November 21, 2019 9:26:19 AM   | [2019-11-21 09:26:19]  |
+      | Added on Thursday, November 21, 2019 9:27:30 AM   | [2019-11-21 09:27:30]  |
+      | Added on Thursday, November 21, 2019 9:32:23 AM   | [2019-11-21 09:32:23]  |
+      | Added on Thursday, November 21, 2019 9:32:42 AM   | [2019-11-21 09:32:42]  |
+      | Added on Thursday, November 21, 2019 9:35:02 AM   | [2019-11-21 09:35:02]  |
+      | Added on Thursday, November 21, 2019 9:35:25 AM   | [2019-11-21 09:35:25]  |
+      | Added on Thursday, November 21, 2019 9:35:57 AM   | [2019-11-21 09:35:57]  |
+      | Added on Thursday, November 21, 2019 9:36:54 AM   | [2019-11-21 09:36:54]  |
+      | Added on Thursday, November 21, 2019 9:39:34 AM   | [2019-11-21 09:39:34]  |
+      | Added on Thursday, November 21, 2019 9:40:30 AM   | [2019-11-21 09:40:30]  |
+      | Added on Thursday, November 21, 2019 9:40:58 AM   | [2019-11-21 09:40:58]  |
+      | Added on Thursday, November 21, 2019 9:46:57 AM   | [2019-11-21 09:46:57]  |
+      | Added on Thursday, November 21, 2019 9:48:14 AM   | [2019-11-21 09:48:14]  |
+      | Added on Thursday, November 21, 2019 9:57:36 AM   | [2019-11-21 09:57:36]  |
+      | Added on Thursday, November 21, 2019 9:58:36 AM   | [2019-11-21 09:58:36]  |
       | Added on Thursday, November 21, 2019 10:01:41 AM  | [2019-11-21 10:01:41] |
       | Added on Thursday, November 21, 2019 10:01:46 AM  | [2019-11-21 10:01:46] |
       | Added on Thursday, November 21, 2019 10:02:07 AM  | [2019-11-21 10:02:07] |
@@ -1246,16 +1246,16 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Thursday, November 21, 2019 10:57:13 PM  | [2019-11-21 22:57:13] |
       | Added on Thursday, November 21, 2019 10:58:48 PM  | [2019-11-21 22:58:48] |
       | Added on Thursday, November 21, 2019 10:59:55 PM  | [2019-11-21 22:59:55] |
-      | Added on Friday, November 22, 2019 9:38:59 AM     | [2019-11-22 9:38:59]  |
-      | Added on Friday, November 22, 2019 9:42:33 AM     | [2019-11-22 9:42:33]  |
-      | Added on Friday, November 22, 2019 9:45:16 AM     | [2019-11-22 9:45:16]  |
-      | Added on Friday, November 22, 2019 9:45:32 AM     | [2019-11-22 9:45:32]  |
-      | Added on Friday, November 22, 2019 9:50:21 AM     | [2019-11-22 9:50:21]  |
-      | Added on Friday, November 22, 2019 9:51:38 AM     | [2019-11-22 9:51:38]  |
-      | Added on Friday, November 22, 2019 9:51:50 AM     | [2019-11-22 9:51:50]  |
-      | Added on Monday, November 25, 2019 9:28:11 AM     | [2019-11-25 9:28:11]  |
-      | Added on Monday, November 25, 2019 9:56:48 AM     | [2019-11-25 9:56:48]  |
-      | Added on Monday, November 25, 2019 9:58:56 AM     | [2019-11-25 9:58:56]  |
+      | Added on Friday, November 22, 2019 9:38:59 AM     | [2019-11-22 09:38:59]  |
+      | Added on Friday, November 22, 2019 9:42:33 AM     | [2019-11-22 09:42:33]  |
+      | Added on Friday, November 22, 2019 9:45:16 AM     | [2019-11-22 09:45:16]  |
+      | Added on Friday, November 22, 2019 9:45:32 AM     | [2019-11-22 09:45:32]  |
+      | Added on Friday, November 22, 2019 9:50:21 AM     | [2019-11-22 09:50:21]  |
+      | Added on Friday, November 22, 2019 9:51:38 AM     | [2019-11-22 09:51:38]  |
+      | Added on Friday, November 22, 2019 9:51:50 AM     | [2019-11-22 09:51:50]  |
+      | Added on Monday, November 25, 2019 9:28:11 AM     | [2019-11-25 09:28:11]  |
+      | Added on Monday, November 25, 2019 9:56:48 AM     | [2019-11-25 09:56:48]  |
+      | Added on Monday, November 25, 2019 9:58:56 AM     | [2019-11-25 09:58:56]  |
       | Added on Monday, November 25, 2019 10:00:16 AM    | [2019-11-25 10:00:16] |
       | Added on Monday, November 25, 2019 10:02:01 AM    | [2019-11-25 10:02:01] |
       | Added on Monday, November 25, 2019 10:04:02 AM    | [2019-11-25 10:04:02] |
@@ -1288,10 +1288,10 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Tuesday, December 10, 2019 12:50:39 AM   | [2019-12-10 12:50:39] |
       | Added on Tuesday, December 10, 2019 12:50:58 AM   | [2019-12-10 12:50:58] |
       | Added on Tuesday, December 10, 2019 12:51:24 AM   | [2019-12-10 12:51:24] |
-      | Added on Tuesday, December 10, 2019 9:24:55 AM    | [2019-12-10 9:24:55]  |
-      | Added on Tuesday, December 10, 2019 9:25:45 AM    | [2019-12-10 9:25:45]  |
-      | Added on Tuesday, December 10, 2019 9:25:50 AM    | [2019-12-10 9:25:50]  |
-      | Added on Tuesday, December 10, 2019 9:26:21 AM    | [2019-12-10 9:26:21]  |
+      | Added on Tuesday, December 10, 2019 9:24:55 AM    | [2019-12-10 09:24:55]  |
+      | Added on Tuesday, December 10, 2019 9:25:45 AM    | [2019-12-10 09:25:45]  |
+      | Added on Tuesday, December 10, 2019 9:25:50 AM    | [2019-12-10 09:25:50]  |
+      | Added on Tuesday, December 10, 2019 9:26:21 AM    | [2019-12-10 09:26:21]  |
       | Added on Friday, November 8, 2019 12:31:34 AM     | [2019-11-08 12:31:34] |
       | Added on Friday, November 8, 2019 12:35:51 AM     | [2019-11-08 12:35:51] |
       | Added on Friday, November 8, 2019 12:35:56 AM     | [2019-11-08 12:35:56] |
@@ -1307,14 +1307,14 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Friday, November 8, 2019 1:12:13 AM      | [2019-11-08 01:12:13]  |
       | Added on Friday, November 8, 2019 1:12:56 AM      | [2019-11-08 01:12:56]  |
       | Added on Friday, November 8, 2019 1:17:10 AM      | [2019-11-08 01:17:10]  |
-      | Added on Friday, November 8, 2019 9:34:51 AM      | [2019-11-08 9:34:51]  |
-      | Added on Friday, November 8, 2019 9:35:49 AM      | [2019-11-08 9:35:49]  |
-      | Added on Friday, November 8, 2019 9:39:56 AM      | [2019-11-08 9:39:56]  |
-      | Added on Friday, November 8, 2019 9:41:40 AM      | [2019-11-08 9:41:40]  |
-      | Added on Friday, November 8, 2019 9:42:29 AM      | [2019-11-08 9:42:29]  |
-      | Added on Friday, November 8, 2019 9:45:50 AM      | [2019-11-08 9:45:50]  |
-      | Added on Friday, November 8, 2019 9:52:16 AM      | [2019-11-08 9:52:16]  |
-      | Added on Friday, November 8, 2019 9:55:17 AM      | [2019-11-08 9:55:17]  |
+      | Added on Friday, November 8, 2019 9:34:51 AM      | [2019-11-08 09:34:51]  |
+      | Added on Friday, November 8, 2019 9:35:49 AM      | [2019-11-08 09:35:49]  |
+      | Added on Friday, November 8, 2019 9:39:56 AM      | [2019-11-08 09:39:56]  |
+      | Added on Friday, November 8, 2019 9:41:40 AM      | [2019-11-08 09:41:40]  |
+      | Added on Friday, November 8, 2019 9:42:29 AM      | [2019-11-08 09:42:29]  |
+      | Added on Friday, November 8, 2019 9:45:50 AM      | [2019-11-08 09:45:50]  |
+      | Added on Friday, November 8, 2019 9:52:16 AM      | [2019-11-08 09:52:16]  |
+      | Added on Friday, November 8, 2019 9:55:17 AM      | [2019-11-08 09:55:17]  |
       | Added on Friday, November 8, 2019 4:23:10 PM      | [2019-11-08 16:23:10] |
       | Added on Friday, November 8, 2019 4:23:14 PM      | [2019-11-08 16:23:14] |
       | Added on Friday, November 8, 2019 4:31:18 PM      | [2019-11-08 16:31:18] |
@@ -1342,22 +1342,22 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | Added on Monday, November 11, 2019 11:59:52 PM    | [2019-11-11 23:59:52] |
       | Added on Tuesday, November 12, 2019 12:00:31 AM   | [2019-11-12 12:00:31] |
       | Added on Tuesday, November 12, 2019 12:01:43 AM   | [2019-11-12 12:01:43] |
-      | Added on Tuesday, November 12, 2019 9:30:57 AM    | [2019-11-12 9:30:57]  |
-      | Added on Tuesday, November 12, 2019 9:44:00 AM    | [2019-11-12 9:44:00]  |
-      | Added on Tuesday, November 12, 2019 9:49:39 AM    | [2019-11-12 9:49:39]  |
-      | Added on Tuesday, November 12, 2019 9:50:56 AM    | [2019-11-12 9:50:56]  |
-      | Added on Tuesday, November 12, 2019 9:56:15 AM    | [2019-11-12 9:56:15]  |
+      | Added on Tuesday, November 12, 2019 9:30:57 AM    | [2019-11-12 09:30:57]  |
+      | Added on Tuesday, November 12, 2019 9:44:00 AM    | [2019-11-12 09:44:00]  |
+      | Added on Tuesday, November 12, 2019 9:49:39 AM    | [2019-11-12 09:49:39]  |
+      | Added on Tuesday, November 12, 2019 9:50:56 AM    | [2019-11-12 09:50:56]  |
+      | Added on Tuesday, November 12, 2019 9:56:15 AM    | [2019-11-12 09:56:15]  |
       | Added on Tuesday, November 12, 2019 10:01:22 AM   | [2019-11-12 10:01:22] |
       | Added on Tuesday, November 12, 2019 10:02:57 AM   | [2019-11-12 10:02:57] |
-      | Added on Thursday, November 7, 2019 9:38:57 AM    | [2019-11-07 9:38:57]  |
-      | Added on Thursday, November 7, 2019 9:40:03 AM    | [2019-11-07 9:40:03]  |
-      | Added on Thursday, November 7, 2019 9:41:48 AM    | [2019-11-07 9:41:48]  |
-      | Added on Thursday, November 7, 2019 9:43:18 AM    | [2019-11-07 9:43:18]  |
-      | Added on Thursday, November 7, 2019 9:49:49 AM    | [2019-11-07 9:49:49]  |
-      | Added on Thursday, November 7, 2019 9:51:32 AM    | [2019-11-07 9:51:32]  |
-      | Added on Thursday, November 7, 2019 9:54:22 AM    | [2019-11-07 9:54:22]  |
-      | Added on Thursday, November 7, 2019 9:54:49 AM    | [2019-11-07 9:54:49]  |
-      | Added on Thursday, November 7, 2019 9:54:54 AM    | [2019-11-07 9:54:54]  |
+      | Added on Thursday, November 7, 2019 9:38:57 AM    | [2019-11-07 09:38:57]  |
+      | Added on Thursday, November 7, 2019 9:40:03 AM    | [2019-11-07 09:40:03]  |
+      | Added on Thursday, November 7, 2019 9:41:48 AM    | [2019-11-07 09:41:48]  |
+      | Added on Thursday, November 7, 2019 9:43:18 AM    | [2019-11-07 09:43:18]  |
+      | Added on Thursday, November 7, 2019 9:49:49 AM    | [2019-11-07 09:49:49]  |
+      | Added on Thursday, November 7, 2019 9:51:32 AM    | [2019-11-07 09:51:32]  |
+      | Added on Thursday, November 7, 2019 9:54:22 AM    | [2019-11-07 09:54:22]  |
+      | Added on Thursday, November 7, 2019 9:54:49 AM    | [2019-11-07 09:54:49]  |
+      | Added on Thursday, November 7, 2019 9:54:54 AM    | [2019-11-07 09:54:54]  |
       | Added on Thursday, November 7, 2019 10:12:09 AM   | [2019-11-07 10:12:09] |
       | Added on Thursday, November 7, 2019 10:22:03 AM   | [2019-11-07 10:22:03] |
       | Added on Thursday, November 7, 2019 10:22:08 AM   | [2019-11-07 10:22:08] |
@@ -1426,12 +1426,12 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年1月22日星期二 下午7:42:52   | [2019-01-22 19:42:52] |
       | 添加于 2019年1月23日星期三 下午8:16:01   | [2019-01-23 20:16:01] |
       | 添加于 2019年1月23日星期三 下午8:18:01   | [2019-01-23 20:18:01] |
-      | 添加于 2019年1月25日星期五 上午8:21:41   | [2019-01-25 8:21:41]  |
-      | 添加于 2019年1月25日星期五 上午8:23:55   | [2019-01-25 8:23:55]  |
-      | 添加于 2019年1月25日星期五 上午8:24:01   | [2019-01-25 8:24:01]  |
-      | 添加于 2019年1月25日星期五 上午8:39:02   | [2019-01-25 8:39:02]  |
-      | 添加于 2019年1月25日星期五 上午8:41:20   | [2019-01-25 8:41:20]  |
-      | 添加于 2019年1月25日星期五 上午8:41:37   | [2019-01-25 8:41:37]  |
+      | 添加于 2019年1月25日星期五 上午8:21:41   | [2019-01-25 08:21:41]  |
+      | 添加于 2019年1月25日星期五 上午8:23:55   | [2019-01-25 08:23:55]  |
+      | 添加于 2019年1月25日星期五 上午8:24:01   | [2019-01-25 08:24:01]  |
+      | 添加于 2019年1月25日星期五 上午8:39:02   | [2019-01-25 08:39:02]  |
+      | 添加于 2019年1月25日星期五 上午8:41:20   | [2019-01-25 08:41:20]  |
+      | 添加于 2019年1月25日星期五 上午8:41:37   | [2019-01-25 08:41:37]  |
       | 添加于 2019年1月28日星期一 下午8:41:54   | [2019-01-28 20:41:54] |
       | 添加于 2019年1月28日星期一 下午8:46:50   | [2019-01-28 20:46:50] |
       | 添加于 2019年1月28日星期一 下午8:48:04   | [2019-01-28 20:48:04] |
@@ -1447,7 +1447,7 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年1月28日星期一 下午8:58:00   | [2019-01-28 20:58:00] |
       | 添加于 2019年1月28日星期一 下午9:15:03   | [2019-01-28 21:15:03] |
       | 添加于 2019年1月28日星期一 下午9:17:18   | [2019-01-28 21:17:18] |
-      | 添加于 2019年1月29日星期二 上午9:31:00   | [2019-01-29 9:31:00]  |
+      | 添加于 2019年1月29日星期二 上午9:31:00   | [2019-01-29 09:31:00]  |
       | 添加于 2019年1月29日星期二 下午7:54:36   | [2019-01-29 19:54:36] |
       | 添加于 2019年1月29日星期二 下午8:01:29   | [2019-01-29 20:01:29] |
       | 添加于 2019年1月29日星期二 下午8:04:41   | [2019-01-29 20:04:41] |
@@ -1456,25 +1456,25 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年1月29日星期二 下午8:09:25   | [2019-01-29 20:09:25] |
       | 添加于 2019年1月29日星期二 下午8:10:34   | [2019-01-29 20:10:34] |
       | 添加于 2019年1月29日星期二 下午8:10:42   | [2019-01-29 20:10:42] |
-      | 添加于 2019年1月30日星期三 上午8:22:16   | [2019-01-30 8:22:16]  |
-      | 添加于 2019年1月30日星期三 上午8:25:27   | [2019-01-30 8:25:27]  |
-      | 添加于 2019年1月30日星期三 上午8:26:56   | [2019-01-30 8:26:56]  |
-      | 添加于 2019年1月30日星期三 上午8:27:07   | [2019-01-30 8:27:07]  |
-      | 添加于 2019年1月30日星期三 上午8:27:49   | [2019-01-30 8:27:49]  |
-      | 添加于 2019年1月30日星期三 上午8:31:31   | [2019-01-30 8:31:31]  |
-      | 添加于 2019年1月30日星期三 上午8:33:13   | [2019-01-30 8:33:13]  |
-      | 添加于 2019年1月30日星期三 上午8:36:03   | [2019-01-30 8:36:03]  |
-      | 添加于 2019年1月30日星期三 上午8:36:37   | [2019-01-30 8:36:37]  |
-      | 添加于 2019年1月30日星期三 上午8:41:07   | [2019-01-30 8:41:07]  |
-      | 添加于 2019年1月30日星期三 上午8:41:45   | [2019-01-30 8:41:45]  |
-      | 添加于 2019年1月30日星期三 上午8:42:23   | [2019-01-30 8:42:23]  |
-      | 添加于 2019年1月30日星期三 上午8:44:40   | [2019-01-30 8:44:40]  |
-      | 添加于 2019年1月30日星期三 上午8:44:54   | [2019-01-30 8:44:54]  |
-      | 添加于 2019年1月30日星期三 上午8:45:32   | [2019-01-30 8:45:32]  |
-      | 添加于 2019年1月30日星期三 上午8:46:27   | [2019-01-30 8:46:27]  |
-      | 添加于 2019年1月30日星期三 上午8:48:26   | [2019-01-30 8:48:26]  |
-      | 添加于 2019年1月30日星期三 上午8:49:03   | [2019-01-30 8:49:03]  |
-      | 添加于 2019年1月30日星期三 上午8:49:33   | [2019-01-30 8:49:33]  |
+      | 添加于 2019年1月30日星期三 上午8:22:16   | [2019-01-30 08:22:16]  |
+      | 添加于 2019年1月30日星期三 上午8:25:27   | [2019-01-30 08:25:27]  |
+      | 添加于 2019年1月30日星期三 上午8:26:56   | [2019-01-30 08:26:56]  |
+      | 添加于 2019年1月30日星期三 上午8:27:07   | [2019-01-30 08:27:07]  |
+      | 添加于 2019年1月30日星期三 上午8:27:49   | [2019-01-30 08:27:49]  |
+      | 添加于 2019年1月30日星期三 上午8:31:31   | [2019-01-30 08:31:31]  |
+      | 添加于 2019年1月30日星期三 上午8:33:13   | [2019-01-30 08:33:13]  |
+      | 添加于 2019年1月30日星期三 上午8:36:03   | [2019-01-30 08:36:03]  |
+      | 添加于 2019年1月30日星期三 上午8:36:37   | [2019-01-30 08:36:37]  |
+      | 添加于 2019年1月30日星期三 上午8:41:07   | [2019-01-30 08:41:07]  |
+      | 添加于 2019年1月30日星期三 上午8:41:45   | [2019-01-30 08:41:45]  |
+      | 添加于 2019年1月30日星期三 上午8:42:23   | [2019-01-30 08:42:23]  |
+      | 添加于 2019年1月30日星期三 上午8:44:40   | [2019-01-30 08:44:40]  |
+      | 添加于 2019年1月30日星期三 上午8:44:54   | [2019-01-30 08:44:54]  |
+      | 添加于 2019年1月30日星期三 上午8:45:32   | [2019-01-30 08:45:32]  |
+      | 添加于 2019年1月30日星期三 上午8:46:27   | [2019-01-30 08:46:27]  |
+      | 添加于 2019年1月30日星期三 上午8:48:26   | [2019-01-30 08:48:26]  |
+      | 添加于 2019年1月30日星期三 上午8:49:03   | [2019-01-30 08:49:03]  |
+      | 添加于 2019年1月30日星期三 上午8:49:33   | [2019-01-30 08:49:33]  |
       | 添加于 2019年1月30日星期三 下午7:28:16   | [2019-01-30 19:28:16] |
       | 添加于 2019年1月30日星期三 下午7:33:17   | [2019-01-30 19:33:17] |
       | 添加于 2019年1月30日星期三 下午7:36:00   | [2019-01-30 19:36:00] |
@@ -1483,19 +1483,19 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年1月30日星期三 下午7:38:15   | [2019-01-30 19:38:15] |
       | 添加于 2019年1月30日星期三 下午7:38:31   | [2019-01-30 19:38:31] |
       | 添加于 2019年1月30日星期三 下午7:41:54   | [2019-01-30 19:41:54] |
-      | 添加于 2019年1月31日星期四 上午7:28:16   | [2019-01-31 7:28:16]  |
-      | 添加于 2019年1月31日星期四 上午7:28:27   | [2019-01-31 7:28:27]  |
-      | 添加于 2019年1月31日星期四 上午7:31:19   | [2019-01-31 7:31:19]  |
-      | 添加于 2019年1月31日星期四 上午7:32:00   | [2019-01-31 7:32:00]  |
-      | 添加于 2019年1月31日星期四 上午7:32:22   | [2019-01-31 7:32:22]  |
-      | 添加于 2019年1月31日星期四 上午7:33:24   | [2019-01-31 7:33:24]  |
-      | 添加于 2019年1月31日星期四 上午7:38:56   | [2019-01-31 7:38:56]  |
-      | 添加于 2019年1月31日星期四 上午7:40:06   | [2019-01-31 7:40:06]  |
-      | 添加于 2019年1月31日星期四 上午7:42:22   | [2019-01-31 7:42:22]  |
-      | 添加于 2019年1月31日星期四 上午7:43:14   | [2019-01-31 7:43:14]  |
-      | 添加于 2019年1月31日星期四 上午7:55:57   | [2019-01-31 7:55:57]  |
-      | 添加于 2019年1月31日星期四 上午7:58:56   | [2019-01-31 7:58:56]  |
-      | 添加于 2019年1月31日星期四 上午8:05:38   | [2019-01-31 8:05:38]  |
+      | 添加于 2019年1月31日星期四 上午7:28:16   | [2019-01-31 07:28:16]  |
+      | 添加于 2019年1月31日星期四 上午7:28:27   | [2019-01-31 07:28:27]  |
+      | 添加于 2019年1月31日星期四 上午7:31:19   | [2019-01-31 07:31:19]  |
+      | 添加于 2019年1月31日星期四 上午7:32:00   | [2019-01-31 07:32:00]  |
+      | 添加于 2019年1月31日星期四 上午7:32:22   | [2019-01-31 07:32:22]  |
+      | 添加于 2019年1月31日星期四 上午7:33:24   | [2019-01-31 07:33:24]  |
+      | 添加于 2019年1月31日星期四 上午7:38:56   | [2019-01-31 07:38:56]  |
+      | 添加于 2019年1月31日星期四 上午7:40:06   | [2019-01-31 07:40:06]  |
+      | 添加于 2019年1月31日星期四 上午7:42:22   | [2019-01-31 07:42:22]  |
+      | 添加于 2019年1月31日星期四 上午7:43:14   | [2019-01-31 07:43:14]  |
+      | 添加于 2019年1月31日星期四 上午7:55:57   | [2019-01-31 07:55:57]  |
+      | 添加于 2019年1月31日星期四 上午7:58:56   | [2019-01-31 07:58:56]  |
+      | 添加于 2019年1月31日星期四 上午8:05:38   | [2019-01-31 08:05:38]  |
       | 添加于 2019年1月31日星期四 下午6:57:33   | [2019-01-31 18:57:33] |
       | 添加于 2019年1月31日星期四 下午6:57:45   | [2019-01-31 18:57:45] |
       | 添加于 2019年1月31日星期四 下午7:15:07   | [2019-01-31 19:15:07] |
@@ -1510,8 +1510,8 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年1月31日星期四 下午7:21:32   | [2019-01-31 19:21:32] |
       | 添加于 2019年1月31日星期四 下午9:13:08   | [2019-01-31 21:13:08] |
       | 添加于 2019年1月31日星期四 下午9:13:36   | [2019-01-31 21:13:36] |
-      | 添加于 2019年2月1日星期五 上午7:11:52    | [2019-02-01 7:11:52]  |
-      | 添加于 2019年2月1日星期五 上午7:17:28    | [2019-02-01 7:17:28]  |
+      | 添加于 2019年2月1日星期五 上午7:11:52    | [2019-02-01 07:11:52]  |
+      | 添加于 2019年2月1日星期五 上午7:17:28    | [2019-02-01 07:17:28]  |
       | 添加于 2019年2月3日星期日 上午12:37:16   | [2019-02-03 12:37:16] |
       | 添加于 2019年2月3日星期日 上午12:38:44   | [2019-02-03 12:38:44] |
       | 添加于 2019年2月3日星期日 上午12:38:54   | [2019-02-03 12:38:54] |
@@ -1533,40 +1533,40 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年2月3日星期日 下午3:44:34    | [2019-02-03 15:44:34] |
       | 添加于 2019年2月3日星期日 下午3:46:58    | [2019-02-03 15:46:58] |
       | 添加于 2019年2月3日星期日 下午3:47:19    | [2019-02-03 15:47:19] |
-      | 添加于 2019年2月4日星期一 上午9:09:49    | [2019-02-04 9:09:49]  |
-      | 添加于 2019年2月4日星期一 上午9:10:42    | [2019-02-04 9:10:42]  |
-      | 添加于 2019年2月4日星期一 上午9:10:54    | [2019-02-04 9:10:54]  |
-      | 添加于 2019年2月4日星期一 上午9:11:38    | [2019-02-04 9:11:38]  |
-      | 添加于 2019年2月4日星期一 上午9:12:06    | [2019-02-04 9:12:06]  |
-      | 添加于 2019年2月4日星期一 上午9:13:25    | [2019-02-04 9:13:25]  |
-      | 添加于 2019年2月4日星期一 上午9:13:31    | [2019-02-04 9:13:31]  |
-      | 添加于 2019年2月4日星期一 上午9:13:33    | [2019-02-04 9:13:33]  |
-      | 添加于 2019年2月4日星期一 上午9:13:35    | [2019-02-04 9:13:35]  |
-      | 添加于 2019年2月4日星期一 上午9:14:09    | [2019-02-04 9:14:09]  |
-      | 添加于 2019年2月4日星期一 上午9:16:09    | [2019-02-04 9:16:09]  |
-      | 添加于 2019年2月4日星期一 上午9:16:16    | [2019-02-04 9:16:16]  |
-      | 添加于 2019年2月4日星期一 上午9:16:33    | [2019-02-04 9:16:33]  |
-      | 添加于 2019年2月4日星期一 上午9:16:35    | [2019-02-04 9:16:35]  |
-      | 添加于 2019年2月11日星期一 上午9:20:24   | [2019-02-11 9:20:24]  |
-      | 添加于 2019年2月11日星期一 上午9:20:44   | [2019-02-11 9:20:44]  |
-      | 添加于 2019年2月11日星期一 上午9:21:00   | [2019-02-11 9:21:00]  |
-      | 添加于 2019年2月11日星期一 上午9:28:50   | [2019-02-11 9:28:50]  |
-      | 添加于 2019年2月11日星期一 上午9:29:11   | [2019-02-11 9:29:11]  |
-      | 添加于 2019年2月11日星期一 上午9:32:14   | [2019-02-11 9:32:14]  |
-      | 添加于 2019年2月11日星期一 上午9:32:30   | [2019-02-11 9:32:30]  |
-      | 添加于 2019年2月11日星期一 上午9:37:46   | [2019-02-11 9:37:46]  |
-      | 添加于 2019年2月11日星期一 上午9:38:02   | [2019-02-11 9:38:02]  |
-      | 添加于 2019年2月11日星期一 上午9:41:41   | [2019-02-11 9:41:41]  |
-      | 添加于 2019年2月11日星期一 上午9:41:55   | [2019-02-11 9:41:55]  |
-      | 添加于 2019年2月11日星期一 上午9:44:09   | [2019-02-11 9:44:09]  |
-      | 添加于 2019年2月11日星期一 上午9:44:15   | [2019-02-11 9:44:15]  |
+      | 添加于 2019年2月4日星期一 上午9:09:49    | [2019-02-04 09:09:49]  |
+      | 添加于 2019年2月4日星期一 上午9:10:42    | [2019-02-04 09:10:42]  |
+      | 添加于 2019年2月4日星期一 上午9:10:54    | [2019-02-04 09:10:54]  |
+      | 添加于 2019年2月4日星期一 上午9:11:38    | [2019-02-04 09:11:38]  |
+      | 添加于 2019年2月4日星期一 上午9:12:06    | [2019-02-04 09:12:06]  |
+      | 添加于 2019年2月4日星期一 上午9:13:25    | [2019-02-04 09:13:25]  |
+      | 添加于 2019年2月4日星期一 上午9:13:31    | [2019-02-04 09:13:31]  |
+      | 添加于 2019年2月4日星期一 上午9:13:33    | [2019-02-04 09:13:33]  |
+      | 添加于 2019年2月4日星期一 上午9:13:35    | [2019-02-04 09:13:35]  |
+      | 添加于 2019年2月4日星期一 上午9:14:09    | [2019-02-04 09:14:09]  |
+      | 添加于 2019年2月4日星期一 上午9:16:09    | [2019-02-04 09:16:09]  |
+      | 添加于 2019年2月4日星期一 上午9:16:16    | [2019-02-04 09:16:16]  |
+      | 添加于 2019年2月4日星期一 上午9:16:33    | [2019-02-04 09:16:33]  |
+      | 添加于 2019年2月4日星期一 上午9:16:35    | [2019-02-04 09:16:35]  |
+      | 添加于 2019年2月11日星期一 上午9:20:24   | [2019-02-11 09:20:24]  |
+      | 添加于 2019年2月11日星期一 上午9:20:44   | [2019-02-11 09:20:44]  |
+      | 添加于 2019年2月11日星期一 上午9:21:00   | [2019-02-11 09:21:00]  |
+      | 添加于 2019年2月11日星期一 上午9:28:50   | [2019-02-11 09:28:50]  |
+      | 添加于 2019年2月11日星期一 上午9:29:11   | [2019-02-11 09:29:11]  |
+      | 添加于 2019年2月11日星期一 上午9:32:14   | [2019-02-11 09:32:14]  |
+      | 添加于 2019年2月11日星期一 上午9:32:30   | [2019-02-11 09:32:30]  |
+      | 添加于 2019年2月11日星期一 上午9:37:46   | [2019-02-11 09:37:46]  |
+      | 添加于 2019年2月11日星期一 上午9:38:02   | [2019-02-11 09:38:02]  |
+      | 添加于 2019年2月11日星期一 上午9:41:41   | [2019-02-11 09:41:41]  |
+      | 添加于 2019年2月11日星期一 上午9:41:55   | [2019-02-11 09:41:55]  |
+      | 添加于 2019年2月11日星期一 上午9:44:09   | [2019-02-11 09:44:09]  |
+      | 添加于 2019年2月11日星期一 上午9:44:15   | [2019-02-11 09:44:15]  |
       | 添加于 2019年2月15日星期五 下午10:47:08  | [2019-02-15 22:47:08] |
       | 添加于 2019年2月15日星期五 下午10:47:15  | [2019-02-15 22:47:15] |
       | 添加于 2019年2月15日星期五 下午11:13:04  | [2019-02-15 23:13:04] |
-      | 添加于 2018年10月9日星期二 上午7:28:04   | [2018-10-09 7:28:04]  |
-      | 添加于 2018年10月9日星期二 上午7:28:05   | [2018-10-09 7:28:05]  |
-      | 添加于 2018年10月9日星期二 上午7:28:47   | [2018-10-09 7:28:47]  |
-      | 添加于 2019年5月6日星期一 上午6:47:13    | [2019-05-06 6:47:13]  |
+      | 添加于 2018年10月9日星期二 上午7:28:04   | [2018-10-09 07:28:04]  |
+      | 添加于 2018年10月9日星期二 上午7:28:05   | [2018-10-09 07:28:05]  |
+      | 添加于 2018年10月9日星期二 上午7:28:47   | [2018-10-09 07:28:47]  |
+      | 添加于 2019年5月6日星期一 上午6:47:13    | [2019-05-06 06:47:13]  |
       | 添加于 2019年7月12日星期五 下午3:32:34   | [2019-07-12 15:32:34] |
       | 添加于 2019年7月13日星期六 下午12:01:55  | [2019-07-13 12:01:55] |
       | 添加于 2019年7月15日星期一 下午7:28:25   | [2019-07-15 19:28:25] |
@@ -1593,28 +1593,28 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年1月13日星期日 下午6:57:50   | [2019-01-13 18:57:50] |
       | 添加于 2019年1月13日星期日 下午7:00:29   | [2019-01-13 19:00:29] |
       | 添加于 2019年1月13日星期日 下午7:00:39   | [2019-01-13 19:00:39] |
-      | 添加于 2019年1月15日星期二 上午9:19:12   | [2019-01-15 9:19:12]  |
-      | 添加于 2019年1月15日星期二 上午9:19:27   | [2019-01-15 9:19:27]  |
-      | 添加于 2019年1月15日星期二 上午9:20:36   | [2019-01-15 9:20:36]  |
-      | 添加于 2019年1月15日星期二 上午9:20:56   | [2019-01-15 9:20:56]  |
-      | 添加于 2019年1月15日星期二 上午9:22:51   | [2019-01-15 9:22:51]  |
-      | 添加于 2019年1月15日星期二 上午9:23:18   | [2019-01-15 9:23:18]  |
+      | 添加于 2019年1月15日星期二 上午9:19:12   | [2019-01-15 09:19:12]  |
+      | 添加于 2019年1月15日星期二 上午9:19:27   | [2019-01-15 09:19:27]  |
+      | 添加于 2019年1月15日星期二 上午9:20:36   | [2019-01-15 09:20:36]  |
+      | 添加于 2019年1月15日星期二 上午9:20:56   | [2019-01-15 09:20:56]  |
+      | 添加于 2019年1月15日星期二 上午9:22:51   | [2019-01-15 09:22:51]  |
+      | 添加于 2019年1月15日星期二 上午9:23:18   | [2019-01-15 09:23:18]  |
       | 添加于 2019年1月16日星期三 下午7:57:40   | [2019-01-16 19:57:40] |
-      | 添加于 2019年1月18日星期五 上午8:10:56   | [2019-01-18 8:10:56]  |
-      | 添加于 2019年1月18日星期五 上午8:11:02   | [2019-01-18 8:11:02]  |
-      | 添加于 2019年1月18日星期五 上午8:11:06   | [2019-01-18 8:11:06]  |
-      | 添加于 2019年1月18日星期五 上午8:11:29   | [2019-01-18 8:11:29]  |
-      | 添加于 2019年1月18日星期五 上午8:11:34   | [2019-01-18 8:11:34]  |
-      | 添加于 2019年1月18日星期五 上午8:11:37   | [2019-01-18 8:11:37]  |
+      | 添加于 2019年1月18日星期五 上午8:10:56   | [2019-01-18 08:10:56]  |
+      | 添加于 2019年1月18日星期五 上午8:11:02   | [2019-01-18 08:11:02]  |
+      | 添加于 2019年1月18日星期五 上午8:11:06   | [2019-01-18 08:11:06]  |
+      | 添加于 2019年1月18日星期五 上午8:11:29   | [2019-01-18 08:11:29]  |
+      | 添加于 2019年1月18日星期五 上午8:11:34   | [2019-01-18 08:11:34]  |
+      | 添加于 2019年1月18日星期五 上午8:11:37   | [2019-01-18 08:11:37]  |
       | 添加于 2019年7月8日星期一 下午5:40:11    | [2019-07-08 17:40:11] |
       | 添加于 2019年7月8日星期一 下午8:05:27    | [2019-07-08 20:05:27] |
-      | 添加于 2019年1月9日星期三 上午7:48:45    | [2019-01-09 7:48:45]  |
-      | 添加于 2019年3月12日星期二 上午9:45:16   | [2019-03-12 9:45:16]  |
-      | 添加于 2019年3月12日星期二 上午9:45:41   | [2019-03-12 9:45:41]  |
-      | 添加于 2019年8月25日星期日 上午3:27:29   | [2019-08-25 3:27:29]  |
-      | 添加于 2019年8月25日星期日 上午3:28:53   | [2019-08-25 3:28:53]  |
-      | 添加于 2019年8月25日星期日 上午5:10:58   | [2019-08-25 5:10:58]  |
-      | 添加于 2019年8月25日星期日 上午5:22:08   | [2019-08-25 5:22:08]  |
+      | 添加于 2019年1月9日星期三 上午7:48:45    | [2019-01-09 07:48:45]  |
+      | 添加于 2019年3月12日星期二 上午9:45:16   | [2019-03-12 09:45:16]  |
+      | 添加于 2019年3月12日星期二 上午9:45:41   | [2019-03-12 09:45:41]  |
+      | 添加于 2019年8月25日星期日 上午3:27:29   | [2019-08-25 03:27:29]  |
+      | 添加于 2019年8月25日星期日 上午3:28:53   | [2019-08-25 03:28:53]  |
+      | 添加于 2019年8月25日星期日 上午5:10:58   | [2019-08-25 05:10:58]  |
+      | 添加于 2019年8月25日星期日 上午5:22:08   | [2019-08-25 05:22:08]  |
       | 添加于 2019年8月25日星期日 上午10:16:13  | [2019-08-25 10:16:13] |
       | 添加于 2019年8月25日星期日 上午10:16:49  | [2019-08-25 10:16:49] |
       | 添加于 2019年8月25日星期日 上午10:25:46  | [2019-08-25 10:25:46] |
@@ -1640,7 +1640,7 @@ Feature: kindle generated timestamps are converted to org mode timestamps for fu
       | 添加于 2019年7月21日星期日 下午3:00:42   | [2019-07-21 15:00:42] |
       | 添加于 2019年7月21日星期日 下午6:04:53   | [2019-07-21 18:04:53] |
       | 添加于 2019年7月24日星期三 下午8:16:52   | [2019-07-24 20:16:52] |
-      | 添加于 2019年7月25日星期四 上午7:51:41   | [2019-07-25 7:51:41]  |
+      | 添加于 2019年7月25日星期四 上午7:51:41   | [2019-07-25 07:51:41]  |
       | 添加于 2019年7月25日星期四 下午10:29:37  | [2019-07-25 22:29:37] |
       | 添加于 2019年8月23日星期五 下午5:56:03   | [2019-08-23 17:56:03] |
 
